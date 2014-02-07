@@ -20,26 +20,33 @@
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script type="text/javascript">
+    	//Tab actions
+		$('#tab_list a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+    </script>
   </head>
   <body>
     
+    <!-- HEADER -->
     <div class="container">
-    
     	<div class="navbar navbar-static-top">
-        
         	<a href="/" class="navbar-brand"><img src="images/logo.png" /></a>
-            
-            <ul class="nav navbar-nav pull-right ">
+            <ul class="nav navbar-nav pull-right">
                 <li><a href="">GİRİŞ</a></li>
 			</ul>
-        
         </div>
-    
     </div>
+    <!-- HEADER -->
     
+    <!-- YENI UYE KAYIT -->
     <div class="jumbotron">
       	
         <div class="container yeni_uye">
@@ -71,6 +78,70 @@
       	</div>
         
     </div>
+    <!-- YENI UYE KAYIT -->
+    
+    <!-- TABS -->
+    <div class="container landing_tabs">
+    	<ul class="nav nav-tabs" id="tab_list">
+            <li class="active"><a href="#yardim" data-toggle="tab">YARDIM</a></li>
+            <li><a href="#guvenlik" data-toggle="tab">GÜVENLİK</a></li>
+            <li><a href="#bize_ulasin" data-toggle="tab">BİZE ULAŞIN</a></li>
+        </ul>
+        
+        <!-- TAB CONTENTS -->
+        <div id="content" class="tab-content">
+            <!-- TAB CONTENTS | YARDIM -->
+            <div class="tab-pane active" id="yardim">
+                <p class="lead">This is Photoshop's version  of Lorem Ipsum. Proingravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh idelit.</p>
+                <div class="row tab_yardim">
+                    <div class="col-md-4">
+                        <h3>TEMEL BİLGİLER</h3>
+                        <p>Sed ut perspiciatis unde omnis İste natus error sit voluptatem Accusantium doloremque laudan Tium, totam rem aperiam, eaque</p>
+                        <p><a class="btn btn-default" href="#" role="button">DAHA FAZLA</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>ÖDEME VE KAYIT</h3>
+                        <p>Sed ut perspiciatis unde omnis İste natus error sit voluptatem Accusantium doloremque laudan Tium, totam rem aperiam, eaque</p>
+                        <p><a class="btn btn-default" href="#" role="button">DAHA FAZLA</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>API VE SDK</h3>
+                        <p>Sed ut perspiciatis unde omnis İste natus error sit voluptatem Accusantium doloremque laudan Tium, totam rem aperiam, eaque</p>
+                        <p><a class="btn btn-default" href="#" role="button">DAHA FAZLA</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- TAB CONTENTS | YARDIM -->
+            
+            <!-- TAB CONTENTS | GÜVENLİK -->
+            <div class="tab-pane" id="guvenlik">
+                GÜVENLİK
+            </div>
+            <!-- TAB CONTENTS | GÜVENLİK -->
+            
+            <!-- TAB CONTENTS | BİZE ULAŞIN -->
+            <div class="tab-pane" id="bize_ulasin">
+                BİZE ULAŞIN
+            </div>
+            <!-- TAB CONTENTS | BİZE ULAŞIN -->
+        </div>
+        <!-- TAB CONTENTS -->
+    </div>
+    <!-- TABS -->
+    
+    <!-- FOOTER -->
+    <div class="footer">
+    	<div class="container">
+        	Copyright © 2014, Kamu Sertifikasyon Merkezi
+            <ul class="nav navbar-nav pull-right">
+            	<li><a href="">Destek / Yardım</a></li>
+            	<li><a href="">Site Haritası</a></li>
+            	<li><a href="">Bize Ulaşın</a></li>
+            	<li><a href="">Güvenlik Bilgileri</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- FOOTER -->
     
   </body>
 </html>
