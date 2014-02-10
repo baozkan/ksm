@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kamu SM Landing Page</title>
+    <title>KSM</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,11 +26,26 @@
     
     <!-- Custom JS -->
     <script type="text/javascript">
-    	//Tab actions
-		$('#tab_list a').click(function (e) {
-		  e.preventDefault()
-		  $(this).tab('show')
-		})
+		$(document).ready(function(){
+
+			//Tab actions
+			$('#tab_list a').click(function (e) {
+			  e.preventDefault()
+			  $(this).tab('show')
+			});
+			
+			//Radio button
+			$("#musteri_selector").click(function(){
+			  if($("#musteri_value").val() == "no"){
+				  $("#musteri_value").val("yes");
+				  $(this).addClass("musteri_selected")
+			  } else {
+				  $("#musteri_value").val("no");
+				  $(this).removeClass("musteri_selected")
+			  }
+			});
+			
+		});
     </script>
   </head>
   <body>
@@ -115,13 +130,52 @@
             
             <!-- TAB CONTENTS | GÜVENLİK -->
             <div class="tab-pane" id="guvenlik">
-                GÜVENLİK
+	            <h2>Güvenliğiniz için Biz ne yapıyoruz?</h2>
+                <p class="lead">İnternet Şubesi işlemlerinde güvenlik ve gizliliğinizi en yüksek seviyede tutabilmek için en gelişmiş önlemleri sürekli takip ediyor, sizler için etkin güvenlik çözümlerini uygulamaya alıyoruz. Ayrıca gerçekleştirilen her işlemi kayıt altına alıyor, kişisel bilgilerinizin gizliliğine en üst seviyede uyularak bilgileleriniz saklanıyor</p>
+                <div class="row tab_guvenlik">
+                    <div class="col-md-6">
+                        <ul>
+                        	<li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <a href="">incididunt</a> ut labore et dolore magna.</span></li>
+                            <li><span>Ut enim ad minim veniam, quis nostrud exercitation <a href="">ullamco</a> laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                            <li><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <a href="">fugiat</a> nulla pariatur laborum.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                        	<li><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <a href="">incididunt</a> ut labore et dolore magna.</span></li>
+                            <li><span>Ut enim ad minim veniam, quis nostrud exercitation <a href="">ullamco</a> laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                            <li><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <a href="">fugiat</a> nulla pariatur laborum.</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- TAB CONTENTS | GÜVENLİK -->
             
             <!-- TAB CONTENTS | BİZE ULAŞIN -->
             <div class="tab-pane" id="bize_ulasin">
-                BİZE ULAŞIN
+                <div class="row tab_iletisim">
+                    <div class="col-md-6">
+                        <h2>7/24 Destek Hattı</h2>
+                        <p>Talep, şikayet ve önerilerinizi bizimle paylaşmak için iletişim formumuzu doldurabilirsiniz. İletmek istediğiniz konu ile ilgili referans numaranız varsa lütfen 0850 222 0 600 nolu destek hattımızı arayın.</p>
+                        <p>
+                            <strong>Kamu Sertifikasyon Merkezi</strong><br>
+                            Tübitak Yerleşkesi P.k. 74, Gebze 41470 Kocaeli, <br>
+                            41470 Kocaeli, Turkey
+                        </p>
+                        <p>T. 0850 222 0 600</p>
+                    </div>
+                    <div class="col-md-6 form_box">
+                    	<h2>İletişim Formu</h2>
+                        <div class="col-md-12"><input type="text" name="isim" placeholder="İsim Soyisim" class="input-lg" /> <input type="text" name="tcno" placeholder="TC.Kimlik No." class="input-sm" /></div>
+                        <div class="col-md-12">
+                        	<a href="javascript:void(0);" class="musteri_selector" id="musteri_selector">Kamu SM’nin kayıtlı müşterisiyim</a>
+                            <input type="hidden" name="musteri_value" id="musteri_value" value="no" />
+                        </div>
+                        <div class="col-md-12"><input type="text" name="email" placeholder="E-mail" class="input-md input-first" /> <input type="text" name="telefon" placeholder="Telefon" class="input-md" /></div>
+                        <div class="col-md-12"><textarea placeholder="Mesaj"></textarea></div>
+                        <div class="col-md-12"><button type="submit" class="btn btn-success">GÖNDER</button></div>
+                    </div>
+                </div>
             </div>
             <!-- TAB CONTENTS | BİZE ULAŞIN -->
         </div>

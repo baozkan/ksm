@@ -1,3 +1,10 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 /* HEADER */
 .navbar-brand {
 	height: 110px;
@@ -181,8 +188,158 @@
 	padding-top: 30px;
 }
 
-.tab_yardim div:last-child {
+#guvenlik h2 {
+	color: #24b68f;
+	font-size: 22px;
+	font-weight: 300;
+	margin: 0 0 25px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.tab_guvenlik .col-md-6 {
+	border-right: 1px solid #d0d1cf;
+	border-top: 1px solid #d0d1cf;
+	padding-left: 0px;
+	padding-right: 40px;
+	padding-top: 30px;
+}
+
+.tab_guvenlik li {
+	color: #24b68f;
+	line-height: 24px;
+	list-style: square;
+	margin-bottom: 25px;
+}
+
+.tab_guvenlik li span { color: #333333; }
+
+.tab_guvenlik li a { color: #24b68f; }
+.tab_guvenlik li a:hover { text-decoration: underline; }
+
+.tab_iletisim .col-md-6 {
+	border-right: 1px solid #d0d1cf;
+	padding-left: 35px;
+	padding-right: 40px;
+}
+
+.tab_yardim div:last-child,
+.tab_guvenlik div:last-child,
+.tab_iletisim div:last-child {
 	border-right: 0px;
+}
+
+#bize_ulasin h2 {
+	color: #24b68f;
+	font-size: 22px;
+	font-weight: 300;
+	margin: 0 0 25px 0;
+	padding: 0;
+	text-align: left;
+}
+
+.tab_iletisim p {
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+.tab_iletisim .form_box .col-md-6,
+.tab_iletisim .form_box .col-md-12 {
+	border: 0;
+	margin-bottom: 24px;
+	padding: 0;
+}
+
+.form_box input {
+	border: 1px solid #e3e4e6;
+	border-radius: 5px;
+	height: 40px;
+	padding: 12px;
+}
+
+.form_box input.input-lg {
+	margin-right: 12px;
+	width: 240px;
+}
+
+.form_box input.input-sm {
+	width: 140px;
+}
+
+.form_box input.input-md {
+	width: 190px;
+}
+
+.form_box input.input-first {
+	margin-right: 12px;
+}
+
+.form_box input.input-sm,
+.form_box input.input-md,
+.form_box input.input-lg,
+.form_box textarea {
+	color: #80827f;
+	font-size: 15px;
+}
+
+.form_box input:focus.input-sm,
+.form_box input:focus.input-md,
+.form_box input:focus.input-lg,
+.form_box textarea:focus {
+	border-color: #c0c0c0;
+	color: #282d25;
+}
+
+.form_box textarea {
+	border: 1px solid #e3e4e6;
+	border-radius: 5px;
+	height: 102px;
+	padding: 12px;
+	width: 394px;
+}
+
+.form_box .btn {
+	background-color: #26cda0;
+	border: 0;
+	color: #282d25;
+	outline: none;
+	padding: 12px 25px;
+}
+
+.form_box .btn:hover {
+	background-color: #50d6b2;
+	border: 0;
+	color: #ffffff;
+	outline: none;
+}
+
+.form_box .btn:active {
+	background-color: #22b890;
+	border: 0;
+	color: #ffffff;
+	outline: none;
+}
+
+.form_box a.musteri_selector {
+	background: url(../images/sprite_radio_button.png) no-repeat;
+	color: #7e807d;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 32px;
+}
+
+.form_box a:hover.musteri_selector {
+	background: url(../images/sprite_radio_button.png) 0px -50px no-repeat;
+	color: #7e807d;
+	text-decoration: none;
+}
+
+.form_box a.musteri_selected,
+.form_box a:hover.musteri_selected {
+	background: url(../images/sprite_radio_button.png) 0px -100px no-repeat;
+	color: #7e807d;
+	text-decoration: none;
 }
 /* TAB CONTENTS */
 
