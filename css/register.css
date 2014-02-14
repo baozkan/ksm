@@ -1,0 +1,193 @@
+/* REGISTER STEPS */
+.register_steps .nav-tabs {
+	border: 0;
+	margin: 0px auto 25px auto;
+	max-width: 725px;
+    text-align: center;
+}
+
+.register_steps .nav-tabs > li {
+	background: url(../images/register_steps.png) 0px 21px no-repeat;
+	color: #a7aaad;
+    float: left;
+	font-size: 11px;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+	margin: 0;
+	padding: 0;
+	text-align: center;
+    zoom: 1; /* hasLayout ie7 trigger */
+	width: 145px;
+}
+
+.register_steps .nav-tabs > li:first-child {
+	background: url(../images/register_steps.png) 99px 21px no-repeat;
+}
+
+.register_steps .nav-tabs > li:last-child {
+	background: url(../images/register_steps.png) -99px 21px no-repeat;
+}
+
+.register_steps .nav-tabs > li span {
+	background-color: #ffffff;
+	border: 2px solid #e3e4e6;
+	border-radius: 4px;
+	color: #32383d;
+	display: inline-block;
+	font-size: 15px;
+	height: 47px;
+	line-height: 43px;
+	margin: 0 49px 20px 49px;
+	width: 47px;
+}
+
+.register_steps .nav-tabs > li.current {
+	color: #2a3740;
+}
+
+.register_steps .nav-tabs > li.current span {
+	background-color: #edeeef;
+	color: #32383d;
+}
+
+.register_steps .nav-tabs > li.past {
+	color: #24b68f;
+}
+
+.register_steps .nav-tabs > li.past span {
+	background-color: #edeeef;
+	color: #24b68f;
+}
+/* REGISTER STEPS */
+
+/* REGISTER CONTENT */
+.registration {
+	background-color: #ffffff;
+	border: 2px solid #e3e4e6;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.registration .col-md-6,
+.registration .col-md-12 {
+	padding: 10px;
+}
+
+.registration input {
+	background-color: #fafafa;
+	border: 1px solid #e3e4e6;
+	border-radius: 3px;
+	height: 40px;
+	padding: 12px;
+	width: 100%;
+}
+
+.registration input:focus {
+	border-color: #c0c0c0;
+	color: #282d25;
+}
+
+.registration input.error {
+	background: url(../images/sprite_radio_button.png) right -252px no-repeat;
+	border-color: #e74c3c;
+	color: #282d25;
+}
+
+.registration .error_description {
+	color: #e74c3c;
+}
+
+.registration a.checker {
+	color: #32383d;
+	display: inline-block;
+	font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 55px;
+}
+
+.registration a:hover.checker {
+	text-decoration: none;
+}
+
+.registration a.unchecked {
+	background: url(../images/sprite_radio_button.png) 0px -150px no-repeat;
+}
+
+.registration a.checked {
+	background: url(../images/sprite_radio_button.png) 0px -200px no-repeat;
+}
+
+.registration .btn-default {
+	background-color: #cbcfd3;
+	border: 0;
+	color: #282d25;
+	float: right;
+	padding: 10px 0;
+	width: 118px;
+}
+
+.registration .btn-default:hover {
+	background-color: #d0d4d7;
+	color: #ffffff;
+}
+
+.registration .btn-success {
+	background-color: #26cda0;
+	border: 0;
+	color: #282d25;
+	padding: 10px 0;
+	width: 118px;
+}
+
+.registration .btn-success:hover {
+	background-color: #51d7b3;
+	color: #ffffff;
+}
+
+.registration .popover_content {
+	list-style-type: none;
+	padding: 0;
+}
+
+.registration .popover-title {
+	color: #282d25;
+	font-weight: 500;
+	padding-left: 44px;
+}
+
+.registration .popover_content li {
+	background: url(../images/sprite_radio_button.png) 0px -400px no-repeat;
+	color: #969895;
+	margin: 0 0 10px 0;
+	padding-left: 30px;
+}
+
+.registration .popover_content li.error {
+	background: url(../images/sprite_radio_button.png) 0px -300px no-repeat;
+	color: #e74c3c;
+}
+
+.registration .popover_content li.confirm {
+	background: url(../images/sprite_radio_button.png) 0px -350px no-repeat;
+	color: #5c605a;
+}
+
+.registration .underlined_column {
+	border-bottom: 1px solid #e3e4e6;
+	line-height: 40px;
+	margin-bottom: 10px;
+	padding-top: 0;
+}
+
+.registration .panel {
+	clear: both;
+}
+
+.registration .panel-heading {
+	background-color: #edeeef;
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	padding: 13px 15px;
+}
+/* REGISTER CONTENT */

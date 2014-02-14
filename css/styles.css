@@ -1,3 +1,7 @@
+body {
+	background-color: #fafafa;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -91,8 +95,8 @@ button:focus {
 }
 /* YENI UYE KAYIT */
 
-/* TABS */
-.nav-tabs {
+/* LANDING TABS */
+.landing_tabs .nav-tabs {
 	border: 2px solid #d0d1cf;
 	border-radius: 8px;
 	margin: 0px auto;
@@ -100,7 +104,7 @@ button:focus {
     text-align: center;
 }
 
-.nav-tabs > li {
+.landing_tabs .nav-tabs > li {
     float: none;
     display: inline-block;
     *display: inline; /* ie7 fix */
@@ -109,41 +113,41 @@ button:focus {
 	width: 30%;
 }
 
-.nav-tabs > li > a {
+.landing_tabs .nav-tabs > li > a {
 	background: none;
 	border: 0;
 	border-right: 2px solid #e5e5e4;
 	color: #a7a8a6;
 }
 
-.nav-tabs > li > a:hover {
+.landing_tabs .nav-tabs > li > a:hover {
 	background: none;
 	border: 0;
 	border-right: 2px solid #e5e5e4;
 	color: #000000;
 }
 
-.nav-tabs > li.active > a {
+.landing_tabs .nav-tabs > li.active > a {
 	background: none;
 	border: 0;
 	border-right: 2px solid #e5e5e4;
 	color: #000000;
 }
 
-.nav-tabs > li.active > a:hover {
+.landing_tabs .nav-tabs > li.active > a:hover {
 	background: none;
 	border: 0;
 	border-right: 2px solid #e5e5e4;
 	color: #000000;
 }
 
-.nav-tabs li:last-child a,
-.nav-tabs li:last-child a:hover {
+.landing_tabs .nav-tabs li:last-child a,
+.landing_tabs .nav-tabs li:last-child a:hover {
 	border: 0;
 }
-/* TABS */
+/* LANDING TABS */
 
-/* TAB CONTENTS */
+/* LANDING TABS CONTENTS */
 .tab-content {
 	margin-bottom: 30px;
 	padding-top: 30px;
@@ -341,7 +345,7 @@ button:focus {
 	color: #7e807d;
 	text-decoration: none;
 }
-/* TAB CONTENTS */
+/* LANDING TABS CONTENTS */
 
 /* FOOTER */
 .footer {
