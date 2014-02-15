@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KSM</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script type="text/javascript">
+		$(document).ready(function(){
+
+			//Radio button
+			$("#ayni_irtibat_link").click(function(){
+			  if($("#ayni_irtibat").val() == "no"){
+				  $("#ayni_irtibat").val("yes");
+				  $(this).removeClass("unchecked")
+				  $(this).addClass("checked")
+			  } else {
+				  $("#ayni_irtibat").val("no");
+				  $(this).removeClass("checked")
+				  $(this).addClass("unchecked")
+			  }
+			});
+			
+			$("#check_link_1").click(function(){
+			  if($("#checkbox_1").val() == "no"){
+				  $("#checkbox_1").val("yes");
+				  $(this).removeClass("unchecked")
+				  $(this).addClass("checked")
+			  } else {
+				  $("#checkbox_1").val("no");
+				  $(this).removeClass("checked")
+				  $(this).addClass("unchecked")
+			  }
+			});
+			
+			//Popover
+			$('[data-toggle="popover"]').popover({
+				trigger: 'hover',
+				'placement': 'top'
+			});
+			
+		});
+    </script>
+  </head>
+  <body>
+    
+    <!-- HEADER -->
+    <div class="container">
+    	<div class="navbar navbar-static-top">
+        	<a href="/" class="navbar-brand"><img src="images/logo.png" /></a>
+        </div>
+    </div>
+    <!-- HEADER -->
+    
+    <!-- REGISTER STEPS -->
+    <div class="container register_steps">
+    	<ul class="nav nav-tabs" id="steps_list">
+            <li class="past">
+            	<span><i class="glyphicon glyphicon-ok"></i></span>
+                KİMLİK BİLGİLERİ
+            </li>
+            <li class="past">
+            	<span><i class="glyphicon glyphicon-ok"></i></span>
+                KURUMSAL BİLGİLER
+            </li>
+            <li class="current">
+            	<span>3</span>
+                VERİ DOĞRULAMA
+            </li>
+            <li>
+            	<span>4</span>
+                KURUM SÖZLEŞMESİ
+            </li>
+            <li>
+            	<span>5</span>
+                ONAY EKRANI
+            </li>
+        </ul>
+    </div>
+    <!-- REGISTER STEPS -->
+    
+    <!-- REGISTER 1 - KIMLIK BILGILERI -->
+    <div class="container">
+    	<div class="row">
+            <div class="col-md-8 col-md-offset-2 registration">
+            	<div class="col-md-12 underlined_column">T.C. Iğdır Belediyesi, Sn. Mehmet Can</div>
+            	<div class="col-md-12 underlined_column">Resmi Adres: Hükümet Cd. Belediye Sok. No:5/B IĞDIR - TÜRKİYE</div>
+            	<div class="col-md-12 underlined_column">
+                	<a href="javascript:void(0);" class="checker checked" id="ayni_irtibat_link">İrtibat adresim yukarıdaki ile aynı</a>
+                    <input type="hidden" name="ayni_irtibat" id="ayni_irtibat" value="yes" />
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    	<h3 class="panel-title">Diğer İletişim Bilgileri</h3>
+                    </div>
+                    <div class="panel-body review">
+                    	<div class="col-md-12">
+                        	Kurum Telefonu: <span>0432 667 73 62</span>
+                            <br>
+                            Faks: <span>0432 667 73 62</span>
+                            <br>
+                            Dahili: <span>291</span>
+                            <br>
+                            E-Posta: <span>mehmetcan@igdir.bel.tr</span>
+                        </div>
+                        <div class="col-md-12 just_checked">
+                        	Kurum damga vergisinden muaf
+                        </div>
+                        <div class="col-md-12 just_checked">
+                        	Kurum vergiden muaf
+                        </div>
+                        <div class="col-md-12 just_checked">
+                        	Kurumum kamu iştiraki
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    	<h3 class="panel-title">Kurum Bölgeleri</h3>
+                    </div>
+                    <div class="panel-body">
+                    	<div class="col-md-12">
+                        	Akdeniz Bölgesi
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <a href="javascript:void(0);" class="checker checked" id="check_link_1">Kurumum adına işlem yapmaya yetkiliyim</a> <a id="pop" href="javascript:void(0);" data-toggle="popover" data-content="Sadece şahıs şirketi olanlar bu kutuyu işaretleyecektir"><img src="images/info-icon.png" /></a>
+                    <input type="hidden" name="checkbox_1" id="checkbox_1" value="yes" />
+                </div>
+                
+            	<div class="col-md-6"><button type="submit" class="btn btn-default">GERİ</button></div>
+            	<div class="col-md-6"><button type="submit" class="btn btn-success">DEVAM</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER 1 - KIMLIK BILGILERI -->
+    
+  </body>
+</html>

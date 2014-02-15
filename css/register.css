@@ -190,4 +190,49 @@
 	border-top-left-radius: 2px;
 	padding: 13px 15px;
 }
+
+.registration .dropdown-toggle {
+    box-sizing: border-box;
+	float: right;
+	width: 45px;
+}
+
+.registration .fillsplit {
+    position: relative;
+}
+
+.registration .dropdown-lead{
+    width: 100%;
+}
+
+.registration .leadcontainer {
+    left: 0;
+    position: absolute;
+    right: 45px;
+}
+
+.registration .dropdown-toggle .caret {
+	border-top-color: #000000;
+	margin-left: 6px;
+}
+
+.registration .fillsplit .btn-primary {
+	background-color: #fafafa;
+	border-color: #e3e4e6;
+	border-radius: 2px;
+	color: #828486;
+	height: 45px;
+	line-height: 35px;
+	text-align: left;
+}
+
+.registration .review span {
+	color: #000000;
+	font-weight: 600;
+}
+
+.registration .just_checked {
+	background: url(../images/sprite_radio_button.png) 0px -450px no-repeat;
+	padding-left: 45px;
+}
 /* REGISTER CONTENT */
