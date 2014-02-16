@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KSM</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script type="text/javascript">
+		$(document).ready(function(){
+
+			//Radio button
+			$("#ayni_irtibat_link").click(function(){
+			  if($("#ayni_irtibat").val() == "no"){
+				  $("#ayni_irtibat").val("yes");
+				  $(this).removeClass("unchecked")
+				  $(this).addClass("checked")
+			  } else {
+				  $("#ayni_irtibat").val("no");
+				  $(this).removeClass("checked")
+				  $(this).addClass("unchecked")
+			  }
+			});
+			
+			$("#check_link_1").click(function(){
+			  if($("#checkbox_1").val() == "no"){
+				  $("#checkbox_1").val("yes");
+				  $(this).removeClass("unchecked")
+				  $(this).addClass("checked")
+			  } else {
+				  $("#checkbox_1").val("no");
+				  $(this).removeClass("checked")
+				  $(this).addClass("unchecked")
+			  }
+			});
+			
+			//Popover
+			$('[data-toggle="popover"]').popover({
+				trigger: 'hover',
+				'placement': 'top'
+			});
+			
+		});
+    </script>
+  </head>
+  <body>
+    
+    <!-- HEADER -->
+    <div class="container">
+    	<div class="navbar navbar-static-top">
+        	<a href="/" class="navbar-brand"><img src="images/logo.png" /></a>
+        </div>
+    </div>
+    <!-- HEADER -->
+    
+    <!-- REGISTER STEPS -->
+    <div class="container register_steps">
+    	<ul class="nav nav-tabs" id="steps_list">
+            <li class="past">
+            	<span><i class="glyphicon glyphicon-ok"></i></span>
+                KİMLİK BİLGİLERİ
+            </li>
+            <li class="past">
+            	<span><i class="glyphicon glyphicon-ok"></i></span>
+                KURUMSAL BİLGİLER
+            </li>
+            <li class="past">
+            	<span><i class="glyphicon glyphicon-ok"></i></span>
+                VERİ DOĞRULAMA
+            </li>
+            <li class="current">
+            	<span>4</span>
+                KURUM SÖZLEŞMESİ
+            </li>
+            <li>
+            	<span>5</span>
+                ONAY EKRANI
+            </li>
+        </ul>
+    </div>
+    <!-- REGISTER STEPS -->
+    
+    <!-- REGISTER 1 - KIMLIK BILGILERI -->
+    <div class="container">
+    	<div class="row">
+            <div class="col-md-8 col-md-offset-2 registration">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    	<h3 class="panel-title">Kurum Yetkili Yazısı</h3>
+                    </div>
+                    <div class="panel-body review">
+                    	<div class="col-md-12 scroller">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus non ligula sit amet imperdiet. Duis vitae tortor sed turpis commodo condimentum non ultrices justo. In lacinia pellentesque porttitor. Etiam eu nibh dignissim, hendrerit elit eget, ultrices nibh. Cras vel adipiscing sapien, quis placerat urna. Maecenas viverra nibh libero, sed adipiscing eros vehicula in. Nam ac metus tempor, vestibulum leo ut, fringilla lorem. Donec nulla justo, auctor eget est sed, dapibus mattis urna. Donec accumsan, dui et viverra cursus, eros justo posuere magna, id adipiscing ipsum est vel diam.</p>
+
+                            <p>Cras ac imperdiet metus. In suscipit facilisis ultrices. Curabitur imperdiet, nisl quis consectetur viverra, justo urna tincidunt augue, vitae tincidunt quam enim eget lorem. Duis varius sit amet tellus eget ultrices. Sed purus magna, commodo vel eleifend sed, varius quis enim. Sed lobortis consequat erat, nec dapibus leo dapibus in. In faucibus sem id tortor laoreet aliquam.</p>
+                            
+                            <p>In quis dolor porta, scelerisque diam et, venenatis tortor. Donec placerat at ipsum a tristique. Nulla pulvinar volutpat neque nec malesuada. Sed pellentesque id lectus vel mattis. Nam id arcu at erat scelerisque sollicitudin. Suspendisse ac pretium tortor, ut varius neque. Proin pellentesque est et accumsan tincidunt. Proin malesuada ligula ac erat laoreet laoreet. Donec orci erat, egestas pharetra pharetra eu, feugiat nec lorem.</p>
+                            
+                            <p>Curabitur placerat risus non nunc fringilla lacinia. Nulla pellentesque justo id bibendum mattis. Aliquam et sollicitudin nibh. Nullam sed viverra diam, quis iaculis lacus. Suspendisse potenti. Pellentesque sit amet sapien volutpat, viverra tellus eu, semper massa. Donec porta dui quis tristique iaculis. Mauris at luctus enim, at lobortis massa. Aliquam quis cursus enim. Nulla pretium mauris in tortor accumsan vehicula. Integer pulvinar nunc risus. Aliquam ornare dolor ligula, a pulvinar nulla ullamcorper nec. Quisque ut tempus lectus, rutrum semper elit. Nam tempor, erat sed scelerisque pulvinar, velit augue iaculis purus, at sodales dolor mauris iaculis lectus.</p>
+                            
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dignissim nunc eget feugiat venenatis. Etiam consequat auctor erat eu gravida. Cras elementum vulputate nisl, id pretium risus aliquam sed. Nullam luctus erat eu ante faucibus sagittis. In eleifend ante sed mattis molestie. Curabitur volutpat blandit convallis. Nam sagittis velit tortor, feugiat adipiscing augue mollis sit amet. Quisque dapibus sapien magna, non porta diam hendrerit in. Mauris tempus eget eros ut semper.</p>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus non ligula sit amet imperdiet. Duis vitae tortor sed turpis commodo condimentum non ultrices justo. In lacinia pellentesque porttitor. Etiam eu nibh dignissim, hendrerit elit eget, ultrices nibh. Cras vel adipiscing sapien, quis placerat urna. Maecenas viverra nibh libero, sed adipiscing eros vehicula in. Nam ac metus tempor, vestibulum leo ut, fringilla lorem. Donec nulla justo, auctor eget est sed, dapibus mattis urna. Donec accumsan, dui et viverra cursus, eros justo posuere magna, id adipiscing ipsum est vel diam.</p>
+
+                            <p>Cras ac imperdiet metus. In suscipit facilisis ultrices. Curabitur imperdiet, nisl quis consectetur viverra, justo urna tincidunt augue, vitae tincidunt quam enim eget lorem. Duis varius sit amet tellus eget ultrices. Sed purus magna, commodo vel eleifend sed, varius quis enim. Sed lobortis consequat erat, nec dapibus leo dapibus in. In faucibus sem id tortor laoreet aliquam.</p>
+                            
+                            <p>In quis dolor porta, scelerisque diam et, venenatis tortor. Donec placerat at ipsum a tristique. Nulla pulvinar volutpat neque nec malesuada. Sed pellentesque id lectus vel mattis. Nam id arcu at erat scelerisque sollicitudin. Suspendisse ac pretium tortor, ut varius neque. Proin pellentesque est et accumsan tincidunt. Proin malesuada ligula ac erat laoreet laoreet. Donec orci erat, egestas pharetra pharetra eu, feugiat nec lorem.</p>
+                            
+                            <p>Curabitur placerat risus non nunc fringilla lacinia. Nulla pellentesque justo id bibendum mattis. Aliquam et sollicitudin nibh. Nullam sed viverra diam, quis iaculis lacus. Suspendisse potenti. Pellentesque sit amet sapien volutpat, viverra tellus eu, semper massa. Donec porta dui quis tristique iaculis. Mauris at luctus enim, at lobortis massa. Aliquam quis cursus enim. Nulla pretium mauris in tortor accumsan vehicula. Integer pulvinar nunc risus. Aliquam ornare dolor ligula, a pulvinar nulla ullamcorper nec. Quisque ut tempus lectus, rutrum semper elit. Nam tempor, erat sed scelerisque pulvinar, velit augue iaculis purus, at sodales dolor mauris iaculis lectus.</p>
+                            
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dignissim nunc eget feugiat venenatis. Etiam consequat auctor erat eu gravida. Cras elementum vulputate nisl, id pretium risus aliquam sed. Nullam luctus erat eu ante faucibus sagittis. In eleifend ante sed mattis molestie. Curabitur volutpat blandit convallis. Nam sagittis velit tortor, feugiat adipiscing augue mollis sit amet. Quisque dapibus sapien magna, non porta diam hendrerit in. Mauris tempus eget eros ut semper.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            	<div class="col-md-4 btn_right"><button type="submit" class="btn btn-success">E-İMZALI GÖNDER</button></div>
+            	<div class="col-md-4 btn_center text-center"><button type="submit" class="btn btn-success">MOBİL İMZALI GÖNDER</button></div>
+            	<div class="col-md-4 btn_left"><button type="submit" class="btn btn-default">ISLAK İMZALI GÖNDER</button></div>
+                
+                <div class="col-md-12">
+                	<ul class="info_list">
+                    	<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus non ligula sit amet imperdiet. Duis vitae tortor sed turpis commodo condimentum non ultrices justo. In lacinia pellentesque porttitor. Etiam eu nibh dignissim, hendrerit elit eget, ultrices nibh. Cras vel adipiscing sapien, quis placerat urna. Maecenas viverra nibh libero, sed adipiscing eros vehicula in.</li>
+                    	<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus non ligula sit amet imperdiet. Duis vitae tortor sed turpis commodo condimentum non ultrices justo. In lacinia pellentesque porttitor. Etiam eu nibh dignissim, hendrerit elit eget, ultrices nibh. Cras vel adipiscing sapien, quis placerat urna. Maecenas viverra nibh libero, sed adipiscing eros vehicula in.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER 1 - KIMLIK BILGILERI -->
+    
+  </body>
+</html>

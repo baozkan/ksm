@@ -235,4 +235,42 @@
 	background: url(../images/sprite_radio_button.png) 0px -450px no-repeat;
 	padding-left: 45px;
 }
+
+.registration .scroller {
+	max-height: 310px;
+	overflow-y: scroll;
+}
+
+.registration .col-md-4 .btn-success,
+.registration .col-md-4 .btn-default {
+	font-size: 12px;
+	width: 160px;
+}
+
+.registration .btn_right .btn-success {
+	float: right;
+}
+
+.registration .btn_center .btn-success {
+	float: none;
+	margin: 0 auto;
+}
+
+.registration .btn_left .btn-default {
+	float: left;
+}
+
+.registration ul.info_list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.registration ul.info_list li {
+	background: url(../images/sprite_radio_button.png) 0px -500px no-repeat;
+	color: #848689;
+	line-height: 25px;
+	margin-top: 35px;
+	padding-left: 40px;
+}
 /* REGISTER CONTENT */
