@@ -251,7 +251,8 @@
 	float: right;
 }
 
-.registration .btn_center .btn-success {
+.registration .btn_center .btn-success,
+.registration .btn_center .btn-default {
 	float: none;
 	margin: 0 auto;
 }
@@ -280,5 +281,33 @@
 
 .eimza_title h3 {
 	padding-left: 45px;
+}
+
+.registration .confirmation_column h4,
+.registration .confirmation_row {
+	color: #24b68f;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.registration .confirmation_column p {
+	line-height: 26px;
+	margin: 0;
+	padding: 0;
+}
+
+.registration .confirmation_column ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.registration .confirmation_column ul li {
+	line-height: 26px;
+	margin: 0;
+	padding: 0;
+}
+
+.registration .confirmation_icon img {
+	margin: 20px 0 23px 0;
 }
 /* REGISTER CONTENT */
