@@ -93,30 +93,49 @@
     <div class="container">
     	<div class="row">
             <div class="col-md-8 col-md-offset-2 registration">
-            	<!-- Hidden popover content -->
-          		<div id="popover_content_wrapper" style="display: none">
-                	<ul class="popover_content">
-                    	<li class="error">Harf kullanmayınız</li>
-                    	<li class="confirm">Boşluk kullanmayınız</li>
-                    	<li>Daha önce başkası tarafından girilmemiş bilgi giriniz</li>
-                    </ul>
-                </div>
-          
-            	<div class="col-md-6"><input type="text" name="1" placeholder="İsim" /></div>
-            	<div class="col-md-6"><input type="text" name="2" placeholder="Soyisim" /></div>
-            	<div class="col-md-6"><input type="text" name="3" placeholder="T.C. Kimlik No" class="error" data-original-title="Lütfen Dikkat!" /></div>
-            	<div class="col-md-6"><input type="text" name="4" placeholder="Doğum Tarihi" /></div>
-                <div class="col-md-12 error_description">Hatalı ya da eksik bilgi girdiniz</div>
-            	<div class="col-md-6"><input type="text" name="5" placeholder="Doğum Yeri" /></div>
-            	<div class="col-md-6"><input type="text" name="6" placeholder="Cilt No" /></div>
-            	<div class="col-md-6"><input type="text" name="7" placeholder="Alie Sıra No" /></div>
-            	<div class="col-md-6"><input type="text" name="8" placeholder="Kurum Vergi No" /></div>
-            	<div class="col-md-12">
-                	<a href="javascript:void(0);" class="checker" >Şahıs şirketi mi?</a> 
-					<a id="pop" href="javascript:void(0);" data-toggle="popover" data-content="Sadece şahıs şirketi olanlar bu kutuyu işaretleyecektir"><img src="images/info-icon.png" /></a>
-                </div>
-            	<div class="col-md-6"><button type="submit" class="btn btn-default">GERİ</button></div>
-            	<div class="col-md-6"><button type="submit" class="btn btn-success">DEVAM</button></div>
+				<form role="form">
+					<!-- Hidden popover content -->
+					<div id="popover_content_wrapper" style="display: none">
+						<ul class="popover_content">
+							<li class="error">Harf kullanmayınız</li>
+							<li class="confirm">Boşluk kullanmayınız</li>
+							<li>Daha önce başkası tarafından girilmemiş bilgi giriniz</li>
+						</ul>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6"><input type="text" name="1" placeholder="İsim" /></div>
+						<div class="col-md-6"><input type="text" name="2" placeholder="Soyisim" /></div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6 has-error">
+							<!--
+								Ekstra class eklemeye gerek yok. .has-error class her ikisini rengini değiştirmelidir.
+								<input type="text" name="3" placeholder="T.C. Kimlik No" class="error" data-original-title="Lütfen Dikkat!" />
+							-->
+							<input type="text" name="3" placeholder="T.C. Kimlik No" data-original-title="Lütfen Dikkat!" />
+							<p class="help-block">Hatalı ya da eksik bilgi girdiniz</p>
+						</div>
+						<div class="col-md-6"> <input type="text" name="4" placeholder="Doğum Tarihi" /> </div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6"><input type="text" name="5" placeholder="Doğum Yeri" /></div>
+						<div class="col-md-6"><input type="text" name="6" placeholder="Cilt No" /></div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-6"><input type="text" name="7" placeholder="Alie Sıra No" /></div>
+						<div class="col-md-6"><input type="text" name="8" placeholder="Kurum Vergi No" /></div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-12">
+							<a href="javascript:void(0);" class="checker" >Şahıs şirketi mi?</a> 
+							<a id="pop" href="javascript:void(0);" data-toggle="popover" data-content="Sadece şahıs şirketi olanlar bu kutuyu işaretleyecektir"><img src="images/info-icon.png" /></a>
+						</div>
+					</div>
+					<div class="form-group">					
+						<div class="col-md-6"><button type="submit" class="btn btn-default">GERİ</button></div>
+						<div class="col-md-6"><button type="submit" class="btn btn-success">DEVAM</button></div>
+					<div>
+				</form>
             </div>
         </div>
     </div>
