@@ -28,30 +28,10 @@
     <!-- Custom JS -->
     <script type="text/javascript">
 		$(document).ready(function(){
-
+		
 			//Radio button
-			$("#ayni_irtibat_link").click(function(){
-			  if($("#ayni_irtibat").val() == "no"){
-				  $("#ayni_irtibat").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#ayni_irtibat").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
-			});
-			
-			$("#check_link_1").click(function(){
-			  if($("#checkbox_1").val() == "no"){
-				  $("#checkbox_1").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#checkbox_1").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
+			$(".checker").click(function(){
+				$(this).toggleClass("checked")
 			});
 			
 			//Popover
@@ -107,8 +87,7 @@
             	<div class="col-md-12 underlined_column">T.C. Iğdır Belediyesi, Sn. Mehmet Can</div>
             	<div class="col-md-12 underlined_column">Resmi Adres: Hükümet Cd. Belediye Sok. No:5/B IĞDIR - TÜRKİYE</div>
             	<div class="col-md-12 underlined_column">
-                	<a href="javascript:void(0);" class="checker checked" id="ayni_irtibat_link">İrtibat adresim yukarıdaki ile aynı</a>
-                    <input type="hidden" name="ayni_irtibat" id="ayni_irtibat" value="yes" />
+                	<a href="javascript:void(0);" class="checker checked">İrtibat adresim yukarıdaki ile aynı</a>
                 </div>
                 
                 <div class="panel panel-default">
@@ -149,8 +128,8 @@
                 </div>
                 
                 <div class="col-md-12">
-                    <a href="javascript:void(0);" class="checker checked" id="check_link_1">Kurumum adına işlem yapmaya yetkiliyim</a> <a id="pop" href="javascript:void(0);" data-toggle="popover" data-content="Sadece şahıs şirketi olanlar bu kutuyu işaretleyecektir"><img src="images/info-icon.png" /></a>
-                    <input type="hidden" name="checkbox_1" id="checkbox_1" value="yes" />
+                    <a href="javascript:void(0);" class="checker checked">Kurumum adına işlem yapmaya yetkiliyim</a> 
+					<a id="pop" href="javascript:void(0);" data-toggle="popover" data-content="Sadece şahıs şirketi olanlar bu kutuyu işaretleyecektir"><img src="images/info-icon.png" /></a>
                 </div>
                 
             	<div class="col-md-6"><button type="submit" class="btn btn-default">GERİ</button></div>

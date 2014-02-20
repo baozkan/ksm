@@ -104,18 +104,15 @@
 	height: 35px;
 	line-height: 35px;
 	padding-left: 55px;
+	background: url(../images/sprite_radio_button.png) 0px -150px no-repeat;
 }
 
 .registration a:hover.checker {
 	text-decoration: none;
 }
 
-.registration a.unchecked {
-	background: url(../images/sprite_radio_button.png) 0px -150px no-repeat;
-}
-
 .registration a.checked {
-	background: url(../images/sprite_radio_button.png) 0px -200px no-repeat;
+	background-position: 0px -200px;
 }
 
 .registration .btn-default {

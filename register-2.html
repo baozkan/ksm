@@ -30,54 +30,9 @@
 		$(document).ready(function(){
 
 			//Radio button
-			$("#ayni_irtibat_link").click(function(){
-			  if($("#ayni_irtibat").val() == "no"){
-				  $("#ayni_irtibat").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#ayni_irtibat").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
+			$(".checker").click(function(){
+				$(this).toggleClass("checked")
 			});
-			
-			$("#check_link_1").click(function(){
-			  if($("#checkbox_1").val() == "no"){
-				  $("#checkbox_1").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#checkbox_1").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
-			});
-			
-			$("#check_link_2").click(function(){
-			  if($("#checkbox_2").val() == "no"){
-				  $("#checkbox_2").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#checkbox_2").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
-			});
-			
-			$("#check_link_3").click(function(){
-			  if($("#checkbox_3").val() == "no"){
-				  $("#checkbox_3").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#checkbox_3").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
-			});
-			
 		});
     </script>
   </head>
@@ -125,10 +80,8 @@
             	<div class="col-md-12 underlined_column">T.C. Iğdır Belediyesi, Sn. Mehmet Can</div>
             	<div class="col-md-12 underlined_column">Resmi Adres: Hükümet Cd. Belediye Sok. No:5/B IĞDIR - TÜRKİYE</div>
             	<div class="col-md-12 underlined_column">
-                	<a href="javascript:void(0);" class="checker checked" id="ayni_irtibat_link">İrtibat adresim yukarıdaki ile aynı</a>
-                    <input type="hidden" name="ayni_irtibat" id="ayni_irtibat" value="yes" />
+                	<a href="javascript:void(0);" class="checker checked">İrtibat adresim yukarıdaki ile aynı</a>
                 </div>
-                
                 <div class="panel panel-default">
                     <div class="panel-heading">
                     	<h3 class="panel-title">İletişim Bilgileri</h3>
@@ -179,16 +132,13 @@
                     	<div class="col-md-6"><input type="text" name="1" placeholder="Faks" /></div>
             			<div class="col-md-6"><input type="text" name="2" placeholder="E-Posta" /></div>
                         <div class="col-md-12">
-                            <a href="javascript:void(0);" class="checker checked" id="check_link_1">Kurum damga vergisinden muaf</a>
-                            <input type="hidden" name="checkbox_1" id="checkbox_1" value="yes" />
+                            <a href="javascript:void(0);" class="checker checked">Kurum damga vergisinden muaf</a>
                         </div>
                         <div class="col-md-12">
-                            <a href="javascript:void(0);" class="checker checked" id="check_link_2">Kurum vergiden muaf</a>
-                            <input type="hidden" name="checkbox_2" id="checkbox_2" value="yes" />
+                            <a href="javascript:void(0);" class="checker checked">Kurum vergiden muaf</a>
                         </div>
                         <div class="col-md-12">
-                            <a href="javascript:void(0);" class="checker checked" id="check_link_3">Kurumum kamu iştiraki</a>
-                            <input type="hidden" name="checkbox_3" id="checkbox_3" value="yes" />
+                            <a href="javascript:void(0);" class="checker checked">Kurumum kamu iştiraki</a>
                         </div>
                     </div>
                 </div>
