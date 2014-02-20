@@ -248,7 +248,8 @@
 	float: right;
 }
 
-.registration .btn_center .btn-success {
+.registration .btn_center .btn-success,
+.registration .btn_center .btn-default {
 	float: none;
 	margin: 0 auto;
 }
@@ -264,10 +265,102 @@
 }
 
 .registration ul.info_list li {
-	background: url(../images/sprite_radio_button.png) 0px -500px no-repeat;
+	background: url(../images/sprite_radio_button.png) -35px -500px no-repeat;
 	color: #848689;
 	line-height: 25px;
 	margin-top: 35px;
 	padding-left: 40px;
+}
+
+.eimza_title {
+	background: url(../images/sprite_radio_button.png) 10px -543px no-repeat;
+}
+
+.sifre_title {
+	background: url(../images/sprite_radio_button.png) 10px -593px no-repeat;
+}
+
+.eimza_title h3 {
+	padding-left: 45px;
+}
+
+.eimza_title a,
+.sifre_title a {
+	background: url(../images/sprite_radio_button.png) right -665px no-repeat;
+	display: inline-block;
+	padding-left: 45px;
+	width: 100%;
+}
+
+.eimza_title a.toggle_on,
+.sifre_title a.toggle_on {
+	background: url(../images/sprite_radio_button.png) right -715px no-repeat;
+}
+
+.eimza_title a:hover,
+.sifre_title a:hover {
+	text-decoration: none;
+}
+
+.registration .confirmation_column h4,
+.registration .confirmation_row {
+	color: #24b68f;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.registration .confirmation_column p {
+	line-height: 26px;
+	margin: 0;
+	padding: 0;
+}
+
+.registration .confirmation_column ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.registration .confirmation_column ul li {
+	line-height: 26px;
+	margin: 0;
+	padding: 0;
+}
+
+.registration .confirmation_icon img {
+	margin: 20px 0 23px 0;
+}
+
+.login .helper-links a {
+	color: #24b68f;
+	margin-right: 35px;
+}
+
+.login .helper-links a:hover {
+	text-decoration: none;
+}
+
+.login_tabs {
+	margin-bottom: 60px;
+}
+
+.login_tabs .nav-tabs {
+	border-radius: 4px;
+}
+
+.login_tabs .nav-tabs > li {
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+	padding: 0;
+    zoom: 1; /* hasLayout ie7 trigger */
+	width: 49%;
+}
+
+.login_tabs .nav-tabs > li.active > a {
+	background-color: #edeeef;
+}
+
+.login_tabs .nav-tabs > li.active > a:hover {
+	background-color: #edeeef;
 }
 /* REGISTER CONTENT */
