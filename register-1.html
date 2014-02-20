@@ -30,16 +30,8 @@
 		$(document).ready(function(){
 
 			//Radio button
-			$("#sahis_sirketi_link").click(function(){
-			  if($("#sahis_sirketi").val() == "no"){
-				  $("#sahis_sirketi").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#sahis_sirketi").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
+			$(".checker").click(function(){
+				$(this).toggleClass("checked")
 			});
 			
 			//Popover
@@ -120,8 +112,8 @@
             	<div class="col-md-6"><input type="text" name="7" placeholder="Alie Sıra No" /></div>
             	<div class="col-md-6"><input type="text" name="8" placeholder="Kurum Vergi No" /></div>
             	<div class="col-md-12">
-                	<a href="javascript:void(0);" class="checker unchecked" id="sahis_sirketi_link">Şahıs şirketi mi?</a> <a id="pop" href="javascript:void(0);" data-toggle="popover" data-content="Sadece şahıs şirketi olanlar bu kutuyu işaretleyecektir"><img src="images/info-icon.png" /></a>
-                    <input type="hidden" name="sahis_sirketi" id="sahis_sirketi" value="no" />
+                	<a href="javascript:void(0);" class="checker" >Şahıs şirketi mi?</a> 
+					<a id="pop" href="javascript:void(0);" data-toggle="popover" data-content="Sadece şahıs şirketi olanlar bu kutuyu işaretleyecektir"><img src="images/info-icon.png" /></a>
                 </div>
             	<div class="col-md-6"><button type="submit" class="btn btn-default">GERİ</button></div>
             	<div class="col-md-6"><button type="submit" class="btn btn-success">DEVAM</button></div>

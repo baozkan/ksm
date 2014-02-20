@@ -30,28 +30,8 @@
 		$(document).ready(function(){
 
 			//Radio button
-			$("#ayni_irtibat_link").click(function(){
-			  if($("#ayni_irtibat").val() == "no"){
-				  $("#ayni_irtibat").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#ayni_irtibat").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
-			});
-			
-			$("#check_link_1").click(function(){
-			  if($("#checkbox_1").val() == "no"){
-				  $("#checkbox_1").val("yes");
-				  $(this).removeClass("unchecked")
-				  $(this).addClass("checked")
-			  } else {
-				  $("#checkbox_1").val("no");
-				  $(this).removeClass("checked")
-				  $(this).addClass("unchecked")
-			  }
+			$(".checker").click(function(){
+				$(this).toggleClass("checked")
 			});
 			
 			//Popover
