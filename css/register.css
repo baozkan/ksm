@@ -119,7 +119,6 @@
 	background-color: #cbcfd3;
 	border: 0;
 	color: #282d25;
-	float: right;
 	padding: 10px 0;
 	width: 118px;
 }
@@ -242,20 +241,6 @@
 .registration .col-md-4 .btn-default {
 	font-size: 12px;
 	width: 160px;
-}
-
-.registration .btn_right .btn-success {
-	float: right;
-}
-
-.registration .btn_center .btn-success,
-.registration .btn_center .btn-default {
-	float: none;
-	margin: 0 auto;
-}
-
-.registration .btn_left .btn-default {
-	float: left;
 }
 
 .registration ul.info_list {
