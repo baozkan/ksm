@@ -1,0 +1,144 @@
+.sidemenu .container {
+	width: 250px !important;
+}
+
+.side-menu {
+	background-color: #2a3740;
+	border-right: 1px solid #14141a;
+	float: left;
+    height: 100%;
+	width: 250px;
+}
+
+.side-menu .menu-shadow {
+	background: url(../images/sidemenu_shadow.png);
+	height: 100%;
+	margin-left: 246px;
+	position: absolute;
+	width: 4px;
+	z-index: 40;
+}
+
+.side-menu h2 {
+	background-color: #cd4c4c;
+	border-bottom: 1px solid #14141a;
+	color: #ffffff;
+	font-size: 18px;
+	height: 53px;
+	line-height: 53px;
+	margin: 0;
+	padding: 0 0 0 22px;
+	width: 250px;
+}
+
+.side-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.side-menu ul li a {
+	background-color: #263139;
+	border-bottom: 1px solid #14141a;
+	color: #7d8388;
+	display: block;
+	font-size: 13px;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 65px;
+	width: 250px;
+}
+
+.side-menu ul li a:hover,
+.side-menu ul li a.active {
+	background-color: #192126 !important;
+	color: #fff;
+	text-decoration: none;
+}
+
+.side-menu ul li.urunler > a { background: url(../images/sprite_radio_button.png) 20px -1700px no-repeat; }
+.side-menu ul li.urunler > a:hover { background: url(../images/sprite_radio_button.png) 20px -1749px no-repeat; }
+.side-menu ul li.urunler > a.active { background: url(../images/sprite_radio_button.png) 20px -1798px no-repeat; }
+
+.side-menu ul li.siparisler > a { background: url(../images/sprite_radio_button.png) 20px -1847px no-repeat; }
+.side-menu ul li.siparisler > a:hover { background: url(../images/sprite_radio_button.png) 20px -1896px no-repeat; }
+.side-menu ul li.siparisler > a.active { background: url(../images/sprite_radio_button.png) 20px -1945px no-repeat; }
+
+.side-menu ul li.sertifikalar > a { background: url(../images/sprite_radio_button.png) 20px -1994px no-repeat; }
+.side-menu ul li.sertifikalar > a:hover { background: url(../images/sprite_radio_button.png) 20px -2043px no-repeat; }
+.side-menu ul li.sertifikalar > a.active { background: url(../images/sprite_radio_button.png) 20px -2092px no-repeat; }
+
+.side-menu ul li.ayarlar > a { background: url(../images/sprite_radio_button.png) 20px -2141px no-repeat; }
+.side-menu ul li.ayarlar > a:hover { background: url(../images/sprite_radio_button.png) 20px -2190px no-repeat; }
+.side-menu ul li.ayarlar > a.active { background: url(../images/sprite_radio_button.png) 20px -2239px no-repeat; }
+
+.side-menu ul li.bildirimler > a { background: url(../images/sprite_radio_button.png) 20px -2288px no-repeat; }
+.side-menu ul li.bildirimler > a:hover { background: url(../images/sprite_radio_button.png) 20px -2337px no-repeat; }
+.side-menu ul li.bildirimler > a.active { background: url(../images/sprite_radio_button.png) 20px -2386px no-repeat; }
+
+.side-menu ul li ul li a {
+	background-color: #263139;
+	border-bottom: 1px solid #14141a;
+	color: #babdc0;
+	display: block;
+	font-size: 13px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 65px;
+	width: 250px;
+}
+
+.side-menu ul li.bildirimler ul li a {
+	background: url(../images/sprite_radio_button.png) 20px -2440px no-repeat;
+	font-size: 12px;
+	height: 47px;
+	line-height: 14px;
+	padding: 10px 0 10px 65px !important;
+}
+
+.side-menu ul li.bildirimler ul li a:hover {
+	background: url(../images/sprite_radio_button.png) 20px -2490px no-repeat;
+}
+
+.side-menu ul li.bildirimler ul li a.tumu {
+	background: url(../images/sprite_radio_button.png) 20px -2552px no-repeat;
+	line-height: 47px;
+	padding: 0 0 0 65px !important;
+}
+
+.side-menu ul li.bildirimler a span {
+	background-color: #e74c3c;
+	border-radius: 8px;
+	color: #fff;
+	float: right;
+	height: 18px;
+	line-height: 18px;
+	margin: 14px 22px 0 0;
+	text-align: center;
+	width: 18px;
+}
+
+#sidemenu_cikis {
+  bottom: 0;
+  height: 47px;
+  position: absolute;
+  width: 250px;
+}
+
+#sidemenu_cikis a {
+	background: #263139 url(../images/sprite_radio_button.png) 20px -2620px no-repeat;
+	border-top: 1px solid #14141a;
+	color: #7d8388;
+	display: block;
+	font-size: 13px;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 65px;
+	width: 250px;
+}
+
+#sidemenu_cikis a:hover {
+	background: #192126 url(../images/sprite_radio_button.png) 20px -2680px no-repeat;
+	color: #fff;
+	text-decoration: none;
+}

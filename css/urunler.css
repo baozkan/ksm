@@ -1,0 +1,124 @@
+.urunler_menu .navbar-nav {
+	border-bottom: 1px solid #dee0e2;
+	width: 100%;
+}
+
+.urunler_menu .navbar-nav a {
+	color: #949799;
+}
+
+.urunler_menu .navbar-nav a:hover,
+.urunler_menu .navbar-nav a.active {
+	background: none;
+	color: #2a3740;
+}
+
+.urun-row {
+	border-bottom: 1px solid #dee0e2;
+	float: left;
+	padding: 20px 0 10px 0;
+	width: 100%;
+}
+
+.urun-row .col-md-4 {
+	border-right: 1px solid #dee0e2;
+}
+
+.urun-row div:last-child {
+	border-right: 0px;
+}
+
+.urun-row img {
+	float: left;
+	margin-right: 15px;
+}
+
+.urun-row h2 {
+	color: #4d565c;
+	font-size: 17px;
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+
+.urun-row p {
+	color: #858e99;
+	font-size: 13px;
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+.urun-row a.btn-default {
+	background-color: #fff;
+	border: 2px solid #22b890;
+	color: #22b890;
+	padding: 1px 10px;
+}
+
+.urun-row a:hover.btn-default {
+	background-color: #22b890;
+	border: 2px solid #22b890;
+	color: #ffffff;
+}
+
+.urun-row a.btn-default span {
+	font-size: 20px;
+}
+
+.urunler-vitrin .urun-row {
+	border-bottom: 0px;
+}
+
+.urunler-vitrin .slider-dots {
+	padding: 20px 0px;
+}
+
+.urunler-vitrin .slider-dots a {
+	background: url(../images/sprite_radio_button.png) -34px -1665px no-repeat;
+	display: inline-block;
+	float: none;
+	height: 8px;
+	text-indent: -10000px;
+	width: 8px;
+}
+
+.urunler-vitrin .slider-dots a:hover,
+.urunler-vitrin .slider-dots a.active {
+	background: url(../images/sprite_radio_button.png) 0px -1665px no-repeat;
+}
+
+.urunler-vitrin .jumbotron {
+	background: url(../images/urunler-vitrin.jpg) no-repeat;
+	border-radius: 0;
+	color: #2a3740;
+	height: 396px !important;
+	margin: 0;
+	max-height: 396 px !important;
+	min-height: 396 px !important;
+	padding: 40px 680px 40px 40px;
+	width: 1024px !important;
+}
+
+	.urunler-vitrin .jumbotron h2 {
+		font-size: 30px;
+		font-weight: 300 !important;
+		margin: 0 0 17px 0;
+		padding: 0;
+	}
+
+	.urunler-vitrin .jumbotron p {
+		font-size: 15px;
+		margin: 0 0 20px 0;
+		padding: 0;
+	}
+
+	.urunler-vitrin .jumbotron a.btn-default {
+		background: none;
+		border: 2px solid #59646c;
+		color: #2a3740;
+	}
+	
+	.urunler-vitrin .jumbotron a:hover.btn-default {
+		background-color: #59646c;
+		border: 2px solid #59646c;
+		color: #ffffff;
+	}

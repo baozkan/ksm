@@ -62,10 +62,6 @@
 
 /* REGISTER CONTENT */
 .registration {
-	width: 624px;
-}
-
-.registration .row {
 	background-color: #ffffff;
 	border: 2px solid #e3e4e6;
 	border-radius: 4px;

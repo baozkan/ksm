@@ -1,0 +1,71 @@
+.destek_arama {
+	padding: 45px 0px;
+}
+
+.destek_arama input.keyword {
+	background-color: #ffffff;
+	border: 2px solid #d4d4d5;
+	border-right: 0px;
+	border-radius: 5px 0 0 5px;
+	height: 54px;
+	margin: 0;
+	padding: 0 0 0 14px;
+	width: 475px;
+}
+
+.destek_arama input.search_button {
+	background-color: #e5e7e9;
+	border: 2px solid #d4d4d5;
+	border-left: 0px;
+	color: #000000;
+	border-radius: 0 5px 5px 0;
+	height: 54px;
+	margin: 0 20px 0 0;
+	padding: 0;
+	width: 77px;
+}
+
+.destek_arama p {
+	color: #697075;
+	font-size: 17px;
+}
+
+.destek_links {
+	margin-bottom: 30px;
+}
+
+.destek_links img {
+	margin-bottom: 10px;
+}
+
+.destek_links h3 {
+	border-bottom: 1px solid #e9ebec;
+	color: #000000;
+	font-size: 18px;
+	line-height: 40px;
+	margin: 0;
+}
+
+.destek_links ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.destek_links ul li {
+	border-top: 1px solid #e9ebec;
+	color: #22b890;
+	line-height: 40px;
+}
+
+.destek_links a.btn-default {
+	background-color: #b6babd;
+	border: 0px;
+	color: #ffffff;
+}
+
+.destek_links a:hover.btn-default {
+	background-color: #22b890;
+	border: 0px;
+	color: #ffffff;
+}

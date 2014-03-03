@@ -9,6 +9,11 @@ button:focus {
     outline: none;
 }
 
+.container {
+	padding: 0px !important;
+	width: 1024px !important;
+}
+
 /* HEADER */
 .navbar-brand {
 	height: 110px;
@@ -44,13 +49,13 @@ button:focus {
 /* HEADER */
 
 /* YENI UYE KAYIT */
-.jumbotron {
+.landing .jumbotron {
 	background: #2a3740 url(../images/background.jpg) top center no-repeat;
 	min-height: 490px;
 	padding: 0;
 }
 
-.jumbotron .yeni_uye h1 {
+.landing .jumbotron .yeni_uye h1 {
 	color: #ffffff;
 	font-size: 36px;
 	font-weight: normal;
@@ -58,30 +63,30 @@ button:focus {
 	text-align: center;
 }
 
-.jumbotron .yeni_uye p {
+.landing .jumbotron .yeni_uye p {
 	color: #bfc1c3;
 	font-size: 17px;
 	text-align: center;
 }
 
-.jumbotron .yeni_uye .uye_tipi {
+.landing .jumbotron .yeni_uye .uye_tipi {
 	padding-top: 50px;
 }
 
-.jumbotron .yeni_uye .uye_tipi h2 {
+.landing .jumbotron .yeni_uye .uye_tipi h2 {
 	color: #ffffff;
 	font-size: 21px;
 	font-weight: normal;
 	text-align: center;
 }
 
-.jumbotron .yeni_uye .uye_tipi p {
+.landing .jumbotron .yeni_uye .uye_tipi p {
 	color: #c6c3c2;
 	font-size: 14px;
 	text-align: center;
 }
 
-.jumbotron .yeni_uye .uye_tipi p a.btn-default {
+.landing .jumbotron .yeni_uye .uye_tipi p a.btn-default {
 	background-color: #26cda0;
 	border: 0px;
 	color: #282d25;
@@ -90,7 +95,7 @@ button:focus {
 	padding: 0px 20px;
 }
 
-.jumbotron .yeni_uye .uye_tipi p a:hover.btn-default {
+.landing .jumbotron .yeni_uye .uye_tipi p a:hover.btn-default {
 	color: #ffffff;
 }
 /* YENI UYE KAYIT */

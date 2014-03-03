@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KSM</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/account.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script type="text/javascript">
+		$(document).ready(function(){
+
+			
+			
+		});
+    </script>
+  </head>
+  <body>
+    
+      <div class="container dashboard">
+      
+		  <!-- SEARCH -->
+          <div class="account_search text-center">
+          	<input type="text" placeholder="Kelime, Ürün, Hizmet..." class="keyword"><input type="submit" class="search_button" value="ARA"><a href="" class="search_close">Kapat</a>
+          </div>
+          <!-- SEARCH -->
+      
+          <!-- ALERT -->
+          <div class="account_alert">
+              <strong>Bakım Çalışması</strong>
+              <span>30 Mart 2014 tarihinde gece 02.00 - 03.00 arasında bakım çalışması nedeniyle siteye geçici süre ulaşılamayacakıtr.</span> 
+              <a href="">Detay</a>
+              <a href="" class="warning_close">Kapat</a>
+          </div>
+          <!-- ALERT -->
+          
+          <!-- HEADER -->
+          <div class="account_header">
+              <ul class="nav navbar-nav">
+                  <li><a href="" class="notification"><span>1</span></a></li>
+                  <li><a href="" class="active">Hesabım</a></li>
+                  <li><a href="">Ürünler ve Hizmetler</a></li>
+                  <li><a href="">Destek / Yardım</a></li>
+			  </ul>
+              <ul class="nav navbar-nav pull-right dashboard_account">
+                  <li><a href="" class="cart_link"><span>4</span></a></li>
+                  <li><a href="" class="search_link">Arama</a></li>
+                  <li><a href="" class="member_link"><span>MG</span></a></li>
+                  <li><a href="" class="cikis">ÇIKIŞ</a></li>
+			  </ul>
+          </div>
+          <!-- HEADER -->
+          
+          <div class="row row-padded dashboard_bilgiler">
+          	<div class="col-md-6">
+            	<h3>Son İşlemler <a class="btn btn-default pull-right" href="#" role="button">Bildirimlerim</a></h3>
+                <table class="table table-striped table-bordered table-zebra son-islemler">
+                <tbody>
+                	<tr>
+                    	<td>Bugün</td>
+                        <td>NES, üyelik yenilemesi yapıldı.</td>
+                    </tr>
+                	<tr>
+                    	<td>Bugün</td>
+                        <td>NES, üyelik yenilemesi yapıldı.</td>
+                    </tr>
+                	<tr>
+                    	<td>Bugün</td>
+                        <td>NES, üyelik yenilemesi yapıldı.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+          	<div class="col-md-6">
+            	<h3>Ürün Bilgileri <a class="btn btn-default pull-right" href="#" role="button">Ürünlerim</a></h3>
+				<table class="table table-striped table-bordered table-zebra urun-bilgileri">
+                <tbody>
+                	<tr>
+                    	<td><img src="images/urun_nes.png" />Nes <span>15</span></td>
+                        <td><img src="images/urun_mali_muhur.png" />Mali Mühür <span>20</span></td>
+                    </tr>
+                	<tr>
+                    	<td><img src="images/urun_zaman_damgasi.png" />Zaman Damgası <span>2</span></td>
+                        <td><img src="images/urun_vpn.png" />VPN <span>15</span></td>
+                    </tr>
+                	<tr>
+                    	<td><img src="images/urun_okc.png" />ÖKC <span>120</span></td>
+                        <td><img src="images/urun_kart_okuyucu.png" />Kart Okuyucu <span>10</span></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+          </div>
+
+		  <div class="jumbotron">
+			<div class="dashboard-slider">
+				<h3>Yeni NES.il imza</h3>
+				<p>Kart okuyucu özelliğiyle 128 bit şifrelenmiş<br>USB 3.0 yeni nesil NES’ler</p>
+				<a class="btn btn-default" href="#" role="button">HEMEN AL</a>
+			</div>
+		  </div>
+		
+		  <div class="row row-padded dashboard_links">
+		  	<div class="col-md-4">
+		  		<h3>Haberler & Duyurular</h3>
+				<ul>
+					<li><a href="">Lorem ipsum dolor sit amet, consectetur...</a></li>
+					<li><a href="">Sed do eiusmod tempor incidi</a></li>
+				<ul>
+		  	</div>
+			<div class="col-md-4">
+				<h3>Acil Durumlar</h3>
+				<ul>
+					<li><a href="">Kayıp-Çalıntı</a></li>
+					<li><a href="">Şüpheli İşlem bildirimi</a></li>
+				<ul>
+			</div>
+			<div class="col-md-4 kullanim_kosullari">
+				<h3>Kullanım Koşulları</h3>
+				<ul>
+					<li><a href="">Mevzuat</a></li>
+					<li><a href="">Yönergeler ve Talimatlar</a></li>
+				<ul>
+			</div>
+		  </div>
+          
+      </div>
+
+	  <div class="dashboard-footer">	  	
+		  <div class="container">
+		  	Copyright © 2013, Kamu Sertifikasyon Merkezi
+		    <ul class="nav navbar-nav pull-right">
+                  <li><a href="">Site Haritası</a></li>
+                  <li><a href="">Bize Ulaşın</a></li>
+                  <li><a href="">Güvenlik Bilgileri</a></li>
+			  </ul>
+		  </div>
+	  </div>
+    
+  </body>
+</html>
