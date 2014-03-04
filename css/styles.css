@@ -21,6 +21,7 @@ button:focus {
 	padding: 0;
 }
 
+/* 
 .navbar {
 	margin-bottom: 0;
 }
@@ -41,7 +42,7 @@ button:focus {
 	text-shadow: none;
 }
 
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:hover {*/
 	background-color: #ffffff;
 	border: 2px solid #24b68f;
 	color: #24b68f;

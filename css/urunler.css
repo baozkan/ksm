@@ -1,3 +1,8 @@
+.urunler_menu 
+{
+	background-color : #FFF;
+}
+
 .urunler_menu .navbar-nav {
 	border-bottom: 1px solid #dee0e2;
 	width: 100%;
@@ -13,54 +18,66 @@
 	color: #2a3740;
 }
 
-.urun-row {
+.tum-urunler {
+	padding: 20px 20px 10px 20px;
+	background-color : #FFF;
+	margin : 0;
+}
+
+.tum-urunler .col-md-4 {
+	border-right: 1px solid #dee0e2;
+	padding : 15px 20px;
+}
+
+.tum-urunler .col-md-4:nth-child(4n-1) {
+	border-right: 0px;
+}
+.tum-urunler .col-md-12{
 	border-bottom: 1px solid #dee0e2;
 	float: left;
-	padding: 20px 0 10px 0;
-	width: 100%;
+	width: 98%;
+	margin-top : 10px;
+	margin-bottom : 15px;
 }
 
-.urun-row .col-md-4 {
-	border-right: 1px solid #dee0e2;
-}
-
-.urun-row div:last-child {
+.tum-urunler div:last-child {
 	border-right: 0px;
 }
 
-.urun-row img {
+.tum-urunler img {
 	float: left;
 	margin-right: 15px;
 }
 
-.urun-row h2 {
+.tum-urunler h2 {
 	color: #4d565c;
 	font-size: 17px;
 	margin: 0 0 12px 0;
 	padding: 0;
+	font-weight: bold;
 }
 
-.urun-row p {
+.tum-urunler p {
 	color: #858e99;
 	font-size: 13px;
 	margin: 0 0 15px 0;
 	padding: 0;
 }
 
-.urun-row a.btn-default {
+.tum-urunler a.btn-default {
 	background-color: #fff;
 	border: 2px solid #22b890;
 	color: #22b890;
 	padding: 1px 10px;
 }
 
-.urun-row a:hover.btn-default {
+.tum-urunler a:hover.btn-default {
 	background-color: #22b890;
 	border: 2px solid #22b890;
 	color: #ffffff;
 }
 
-.urun-row a.btn-default span {
+.tum-urunler a.btn-default span {
 	font-size: 20px;
 }
 
