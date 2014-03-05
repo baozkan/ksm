@@ -78,9 +78,11 @@
 
 .account_header {
     background-color: #2a3740;
-    float: left;
-    height: 54px;
-    width: 100%;
+}
+
+.account_header .row{
+    margin-left : 0;
+	margin-right : 0;
 }
 
 	.account_header .navbar-nav li a {
@@ -254,6 +256,10 @@
 	float: right;
 	font-size: 12px;
 	padding-right: 15px;
+}
+
+.dashboard {
+	margin-top : 64px;
 }
 
 .dashboard .jumbotron {

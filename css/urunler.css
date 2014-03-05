@@ -18,21 +18,22 @@
 	color: #2a3740;
 }
 
-.tum-urunler {
-	padding: 20px 20px 10px 20px;
+.urunler-vitrin {
+	padding: 60px 20px 10px 20px;
+}
+
+.product-list {
+	padding: 60px 20px 10px 20px;
 	background-color : #FFF;
 	margin : 0;
 }
 
-.tum-urunler .col-md-4 {
+.product-list .col-md-4 {
 	border-right: 1px solid #dee0e2;
 	padding : 15px 20px;
 }
 
-.tum-urunler .col-md-4:nth-child(4n-1) {
-	border-right: 0px;
-}
-.tum-urunler .col-md-12{
+.product-list .col-md-12{
 	border-bottom: 1px solid #dee0e2;
 	float: left;
 	width: 98%;
@@ -40,16 +41,16 @@
 	margin-bottom : 15px;
 }
 
-.tum-urunler div:last-child {
+.product-list div:last-child {
 	border-right: 0px;
 }
 
-.tum-urunler img {
+.product-list img {
 	float: left;
 	margin-right: 15px;
 }
 
-.tum-urunler h2 {
+.product-list h2 {
 	color: #4d565c;
 	font-size: 17px;
 	margin: 0 0 12px 0;
@@ -57,27 +58,27 @@
 	font-weight: bold;
 }
 
-.tum-urunler p {
+.product-list p {
 	color: #858e99;
 	font-size: 13px;
 	margin: 0 0 15px 0;
 	padding: 0;
 }
 
-.tum-urunler a.btn-default {
+.product-list a.btn-default {
 	background-color: #fff;
 	border: 2px solid #22b890;
 	color: #22b890;
 	padding: 1px 10px;
 }
 
-.tum-urunler a:hover.btn-default {
+.product-list a:hover.btn-default {
 	background-color: #22b890;
 	border: 2px solid #22b890;
 	color: #ffffff;
 }
 
-.tum-urunler a.btn-default span {
+.product-list a.btn-default span {
 	font-size: 20px;
 }
 
