@@ -21,15 +21,15 @@ button:focus {
 	padding: 0;
 }
 
-.header-default .navbar {
+.navbar {
 	margin-bottom: 0;
 }
 
-.header-default .navbar .nav {
+.navbar .nav {
 	padding-top: 32px;
 }
 
-.header-default .navbar .nav > li > a {
+.navbar .nav > li > a {
 	border: 2px solid #bec0bd;
 	border-radius: 5px;
 	color: #282d25;
@@ -41,12 +41,11 @@ button:focus {
 	text-shadow: none;
 }
 
-.header-default .navbar .nav > li > a:hover {
+.navbar .nav > li > a:hover {
 	background-color: #ffffff;
 	border: 2px solid #24b68f;
 	color: #24b68f;
 }
-
 /* HEADER */
 
 /* YENI UYE KAYIT */
