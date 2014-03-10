@@ -1,3 +1,33 @@
+/* HEADER */
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar .nav {
+	padding-top: 32px;
+}
+
+.navbar .nav > li > a {
+	border: 2px solid #bec0bd;
+	border-radius: 5px;
+	color: #282d25;
+	float: none;
+	font-size: 14px;
+	line-height: 42px;
+	padding: 0 27px;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.navbar .nav > li > a:hover {
+	background-color: #ffffff;
+	border: 2px solid #24b68f;
+	color: #24b68f;
+}
+
+/* HEADER */
+
+
 /* REGISTER STEPS */
 .register_steps .nav-tabs {
 	border: 0;
@@ -62,6 +92,10 @@
 
 /* REGISTER CONTENT */
 .registration {
+	width: 624px !important;
+}
+
+.registration .row {
 	background-color: #ffffff;
 	border: 2px solid #e3e4e6;
 	border-radius: 4px;

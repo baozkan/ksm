@@ -1,3 +1,11 @@
+/* HEADER */
+
+.navbar-brand .row {
+	margin-left : 0;
+	margin-right : 0;
+}
+
+/* HEADER */
 .account_search {
     background-color: #1f252a;
 	border-bottom: 4px solid #1a1f24;
@@ -78,9 +86,11 @@
 
 .account_header {
     background-color: #2a3740;
-    float: left;
-    height: 54px;
-    width: 100%;
+}
+
+.account_header .row{
+    margin-left : 0;
+	margin-right : 0;
 }
 
 	.account_header .navbar-nav li a {
@@ -212,48 +222,65 @@
 	overflow: hidden;
 }
 
-.table-zebra td {
+.activity-list .list-group-item {
 	line-height: 45px !important;
 	padding: 0 0 0 15px !important;
+	background-color: transparent;
 }
 
-.table-zebra > tbody > tr:nth-child(odd) > td, .table-zebra > tbody > tr:nth-child(odd) > th {
+.activity-list li:nth-child(odd){
 	background-color: #f6f6f7;
 }
 
-.table-zebra > tbody > tr:first-child > :first-child {
-	border-radius: 6px 0 0 0 !important;
+.activity-list .list-group-item a {
+	padding-left: 20px;
+	color: #333;
 }
 
-.table-zebra > tbody > tr:first-child > :last-child {
-	border-radius: 0 6px 0 0 !important;
-}
-
-	.table-zebra > tbody > tr:last-child > :first-child {
-		border-radius: 0 0 0 6px !important;
-	}
-
-	.table-zebra > tbody > tr:last-child > :last-child {
-		border-radius: 0 0 6px 0 !important;
-	}
-	
-.son-islemler tr td:first-child {
+.activity-list .list-group-item span {
 	font-size: 11px;
-	width: 100px;
+	padding-right: 50px;
+	border-right: 1px solid #ddd;
 }
 
-.urun-bilgileri td {
-	width: 50%;
+.inventory-list .list-group-item {
+	line-height: 45px !important;
+	padding: 0 0 0 15px !important;
+	background-color: transparent;
+	float : left;
+	width : 233px;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 0;
+}.inventory-list li:nth-child(4n+1),.inventory-list li:nth-child(4n+2){
+	background-color: #f6f6f7;
+}.inventory-list li:nth-child(even){
+	border-left : 0;
+}.inventory-list li:nth-child(6n+2){
+	border-top-right-radius: 4px;
+}.inventory-list li:nth-child(6n-1){
+	border-bottom-left-radius: 4px;
 }
 
-.urun-bilgileri td img {
-	margin-right: 12px;
-}
+	.inventory-list  a {
+		color: #333;
+	}
 
-.urun-bilgileri td span {
-	float: right;
-	font-size: 12px;
-	padding-right: 15px;
+		.inventory-list  span {
+			float : right;
+			font-size: 12px;
+			padding-right: 15px;
+		}
+
+		.inventory-list  img {
+			float : left;
+			margin-top: 6px;
+			margin-right : 12px;
+		}
+				border-radius: 0 0 6px 0 !important;
+			}
+
+.dashboard {
+	margin-top : 64px;
 }
 
 .dashboard .jumbotron {
