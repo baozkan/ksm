@@ -1,0 +1,197 @@
+.sepet {
+	padding: 60px 20px 10px 20px;
+}
+
+.sepet h1 {
+	border-bottom: 1px solid #dee0e2;
+	color: #4d565c;
+	font-size: 20px;
+	font-weight: 300;
+	height: 65px;
+	line-height: 64px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.sepet .sepet-row {
+	border-bottom: 1px solid #dee0e2;
+	height: 110px;
+	margin-top : 15px;
+	margin-left : 0 !important;
+	margin-right : 0 !important;
+}
+
+.sepet .sepet-row .col-md-1,
+.sepet .sepet-row .col-md-2,
+.sepet .sepet-row .col-md-3,
+.sepet .sepet-row .col-md-4,
+.sepet .sepet-row .col-md-5{
+	padding-left : 10px;
+	padding-right : 10px;
+}
+
+
+
+.sepet-row img {
+	margin : 5px;
+}
+
+.sepet-row .urun-detay {
+	float: left;
+	height: 109px;
+	padding: 18px 0 0 0;
+	width: 542px;
+}
+
+	.sepet-row .detay-baslik {
+		color: #2a3740;
+		font-size: 20px;
+		margin-bottom: 13px;
+	}
+
+	.sepet-row .detay-baslik span {
+		color: #71787c;
+	}
+
+	.sepet-row p {
+		color: #71787c;
+		font-size: 13px;
+		margin: 0 0 3px 0;
+		padding: 0;
+	}
+
+.sepet-row .urun-fiyat {
+	color: #71787c;
+	font-size: 14px;
+}
+	.sepet-row .urun-fiyat span {
+		font-size: 18px;
+	}
+	
+.sepet-row .urun-adet input {
+	border: 2px solid #e3e4e6;
+	border-radius: 3px;
+	color: #71787c;
+	font-size: 16px;
+	height: 37px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 82px;
+}
+
+.sepet-row .urun-toplam {
+	color: #2a3740;
+	font-size: 20px;
+	text-align: right;
+}
+
+.sepet-row .urun-actions {
+	text-align: right;
+}
+
+	.sepet-row .urun-actions a {
+		color: #71787c;
+		font-size: 13px;
+	}
+	
+	.sepet-row .urun-actions a:hover {
+		color: #24b68f;
+		text-decoration: none;
+	}
+	
+	.sepet-row .urun-actions a {
+		margin-top : 48px;
+		margin-left : 10px;
+	}
+
+	
+
+.sepet .sepet-ozeti {
+	border-bottom: 1px solid #dee0e2;
+	margin-bottom: 20px;
+	padding: 25px 20px;
+}
+
+.sepet .sepet-ozeti .sepet-not {
+	background-color: #f7f7f7;
+	border: 1px solid #d4d8db;
+	border-radius: 3px;
+	padding: 20px 0 20px 20px;
+}
+
+.sepet .sepet-ozeti .sepet-not input {
+	background: url(../images/sprite_radio_button.png) 295px -492px no-repeat;
+	border: 1px solid #d4d8db;
+	border-radius: 3px;
+	float: left;
+	height: 45px;
+	margin: 0;
+	padding: 0 0 0 19px;
+	width: 370px;
+}
+
+.sepet .sepet-ozeti .sepet-not input.input_error {
+	border: 1px solid #e74c3c;
+}
+
+.sepet .sepet-ozeti .sepet-not span {
+	color: #b8bcbe;
+	line-height: 45px;
+	text-align: center;
+	margin-left : 10px;
+}
+
+.sepet .sepet-ozeti .sepet-uyari {
+	color: #e74c3c;
+	font-size: 12px;
+}
+
+.sepet .sepet-ozeti .toplam-cell {
+	color: #b4b8ba;
+	float: left;
+	font-size: 16px;
+	height: 30px;
+	text-align: right;
+	width: 140px;
+}
+
+.sepet .sepet-ozeti .grand {
+	color: #2a3740;
+	font-size: 20px;
+}
+
+.sepet .sepet-butonlar {
+	padding: 0 20px 50px 20px;
+}
+
+.sepet .sepet-butonlar a {
+	border: 0;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+}
+
+.sepet .sepet-butonlar a.btn-default {
+	background-color: #b6babd;
+	color: #fff;
+	margin-right: 15px;
+	width: 145px;
+}
+
+.sepet .sepet-butonlar a:hover.btn-default {
+	background-color: #22b890;
+}
+
+.sepet .sepet-butonlar a.btn-primary {
+	background-color: #22b890;
+	border: 0;
+	color: #282d25;
+	width: 175px;
+}
+
+.sepet .sepet-butonlar a:hover.btn-primary {
+	color: #fff;
+}

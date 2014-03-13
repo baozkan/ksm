@@ -224,3 +224,263 @@
 .sepet .sepet-butonlar a:hover.btn-primary {
 	color: #fff;
 }
+
+/* CHECKOUT STEPS */
+.checkout_steps {
+	margin-top: 15px;
+}
+
+.checkout_steps .nav-tabs {
+	border: 0;
+	margin: 0px auto 25px auto;
+	max-width: 725px;
+    text-align: center;
+}
+
+.checkout_steps .nav-tabs > li {
+	background: url(../images/register_steps.png) 0px 21px no-repeat;
+	color: #a7aaad;
+    float: left;
+	font-size: 11px;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+	margin: 0;
+	padding: 0;
+	text-align: center;
+    zoom: 1; /* hasLayout ie7 trigger */
+	width: 145px;
+}
+
+.checkout_steps .nav-tabs > li:first-child {
+	background: url(../images/register_steps.png) 99px 21px no-repeat;
+}
+
+.checkout_steps .nav-tabs > li:last-child {
+	background: url(../images/register_steps.png) -99px 21px no-repeat;
+}
+
+.checkout_steps .nav-tabs > li span {
+	background-color: #ffffff;
+	border: 2px solid #e3e4e6;
+	border-radius: 4px;
+	color: #32383d;
+	display: inline-block;
+	font-size: 15px;
+	height: 47px;
+	line-height: 43px;
+	margin: 0 49px 20px 49px;
+	width: 47px;
+}
+
+.checkout_steps .nav-tabs > li.current {
+	color: #2a3740;
+}
+
+.checkout_steps .nav-tabs > li.current span {
+	background-color: #edeeef;
+	color: #32383d;
+}
+
+.checkout_steps .nav-tabs > li.past {
+	color: #24b68f;
+}
+
+.checkout_steps .nav-tabs > li.past span {
+	background-color: #edeeef;
+	color: #24b68f;
+}
+/* CHECKOUT STEPS */
+
+.checkout_container {
+	margin: 0 auto;
+	width: 580px;
+}
+
+.checkout_container .col-md-6,
+.checkout_container .col-md-12 {
+	padding: 10px;
+}
+
+.checkout_container .underlined_column {
+	border-bottom: 1px solid #e3e4e6;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	padding-top: 0;
+}
+
+.checkout_container a.btn {
+	border: none;
+	height: 41px;
+	line-height: 41px;
+	padding: 0px;
+	width: 128px;
+}
+
+.checkout_container a.btn-default {
+	background-color: #b6babd;
+	color: #fff;
+}
+
+.checkout_container a.btn-success {
+	background-color: #26cda0;
+	color: #282d25;
+}
+
+.checkout_space {
+	padding: 110px 0 30px 0 !important;
+	text-align: center;
+}
+
+.checkout_container input[type="text"] {
+	border: 1px solid #e3e4e6;
+	border-radius: 2px;
+	color: #939699;
+	height: 45px;
+	margin: 0;
+	padding: 0 0 0 14px;
+	width: 100%;
+}
+
+.sepet .dropdown-toggle {
+    box-sizing: border-box !important;
+	float: right !important;
+	width: 45px !important;
+}
+
+.sepet .fillsplit {
+    position: relative !important;
+}
+
+.sepet .dropdown-lead{
+    width: 100% !important;
+}
+
+.sepet .leadcontainer {
+    left: 0 !important;
+    position: absolute !important;
+    right: 45px !important;
+}
+
+.sepet .dropdown-toggle .caret {
+	border-top-color: #000000 !important;
+	margin-left: 6px !important;
+}
+
+.sepet .fillsplit .btn-primary {
+	background-color: #fafafa !important;
+	border: 1px solid #e3e4e6 !important;
+	border-radius: 2px !important;
+	color: #828486 !important;
+	height: 45px !important;
+	line-height: 43px !important;
+	padding-left: 14px !important;
+	text-align: left !important;
+}
+
+.sepet a.checker {
+	color: #32383d;
+	display: inline-block;
+	font-size: 13px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 55px;
+	background: url(../images/sprite_radio_button.png) 0px -150px no-repeat;
+}
+
+.sepet a:hover.checker {
+	text-decoration: none;
+}
+
+.sepet a.checked {
+	background-position: 0px -200px;
+}
+
+.checkout_container .input_group {
+	background-color: #fff;
+	border: 1px solid #e3e4e6;
+}
+
+.checkout_container .input_group input {
+	background-color: #fafafa !important;
+}
+
+.checkout_container .landing_tabs .nav-tabs {
+	border: 2px solid #26cda0;
+	border-radius: 8px;
+	margin: 0px auto;
+    text-align: center;
+}
+
+.checkout_container .landing_tabs .nav-tabs > li {
+	width: 155px;
+}
+
+.checkout_container .landing_tabs .nav-tabs > li > a {
+	background: none;
+	border: 0;
+	border-right: 1px solid #26cda0;
+	border-radius: 0;
+	color: #a7a8a6;
+}
+
+.checkout_container .landing_tabs .nav-tabs li:last-child a,
+.checkout_container .landing_tabs .nav-tabs li:last-child a:hover {
+	border: 0;
+}
+
+.checkout_container .landing_tabs .nav-tabs > li.active > a {
+	color: #000000;
+}
+
+.checkout_container .landing_tabs .nav-tabs > li.active > a:hover {
+	color: #000000;
+}
+
+.checkout_container .tutar_bilgi {
+	font-size: 17px;
+	margin-bottom: 0;
+	padding-top: 15px;
+}
+
+.checkout_container .select_option {
+	height: 40px;
+	line-height: 39px;
+	margin: 0;
+	padding: 0;
+}
+
+.checkout_container .select_option.last {
+	margin-bottom: 25px;
+}
+
+.checkout_container .select_option a {
+	background: url(../images/sprite_radio_button.png) 10px 8px no-repeat;
+	color: #32383d;
+	display: block;
+	height: 40px;
+	font-size: 16px;
+	padding-left: 43px;
+}
+
+.checkout_container .select_option a.active {
+	background: url(../images/sprite_radio_button.png) 10px -342px no-repeat;
+}
+
+.checkout_container .select_option a:hover {
+	text-decoration: none;
+}
+
+.checkout_container .kk_bilgi {
+	margin: 0 auto;
+	padding: 13px 0;
+	width: 500px;
+}
+
+.checkout_container .kk_bilgi .col-md-6 {
+	padding: 0 15px;
+}
+
+.checkout_container .kk_bilgi input.cvc {
+	padding: 0;
+	text-align: center;
+}
