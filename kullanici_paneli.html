@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>KSM</title>
+
+    	<!-- Bootstrap -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    	<!-- Custom CSS -->
+    	<link href="css/styles.css" rel="stylesheet">
+    	<link href="css/account.css" rel="stylesheet">
+    	<link href="css/user_panel.css" rel="stylesheet">
+
+    	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+      		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    		<![endif]-->
+
+    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+    
+    	<!-- Custom JS -->
+    	<script type="text/javascript">
+			$(document).ready(function(){
+
+    			$('[data-toggle="popover"]').popover({
+					trigger: 'hover',
+					'placement': 'bottom',
+					'html': 'true'
+				});
+				
+			});
+    	</script>
+	</head>
+<body>
+    
+	<!-- HEADER -->
+	<nav class="navbar navbar-brand navbar-fixed-top" role="navigation">
+		<div class="container">
+		  <div class="row account_header" id="navbar-wrapper">
+			  <ul class="nav navbar-nav">
+				  <li><a href="" class="notification" id="sidemenu-toggle"><span>1</span></a></li>
+				  <li><a href="">Hesabım</a></li>
+				  <li><a href="">Ürünler ve Hizmetler</a></li>
+				  <li><a href="">Destek / Yardım</a></li>
+			  </ul>
+			  <ul class="nav navbar-nav pull-right dashboard_account">
+				  <li><a href="" class="cart_link"><span>4</span></a></li>
+				  <li><a href="" class="search_link">Arama</a></li>
+				  <li><a href="" class="member_link"><span>MG</span></a></li>
+				  <li><a href="" class="cikis">ÇIKIŞ</a></li>
+			  </ul>
+		  </div>
+		</div>
+	</nav>
+	<!-- ./HEADER -->
+		
+	<div class="container user_panel">
+    	<div class="heading">
+        	<h1>Personel İşlemleri</h1>
+            <ul class="nav navbar-nav pull-right">
+				<li class="active"><a href="" class="btn btn-default">Onay İşlemleri</a></li>
+				<li><a href="" class="btn btn-default">Askıya Alma</a></li>
+				<li><a href="" class="btn btn-default">İptal</a></li>
+				<li><a href="" class="btn btn-default">Kart Talebi</a></li>
+			</ul>
+        </div>
+        
+        <div class="row search_top">
+        	<div class="col-md-3 users_selected">
+            	<a href="">2 Kullanıcı seçildi</a>
+            </div>
+            
+            <div class="col-md-9 search">
+            	<input type="text" placeholder="Kullanıcı İsmi, TCKN, Sözleşme No..." class="keyword"><input type="submit" value="ARA" class="submit"> <a href="">Detaylı Arama</a>
+            </div>
+        </div>
+        
+        <div class="row search_summary">
+        	<div class="col-md-12">
+            	46 sonuç bulundu <a href="">Genel Müdürlük</a> <a href="">Ocak</a> <a href="">NES</a>
+            </div>
+        </div>
+        
+        <div class="row search_results">
+        	<table class="search-table table table-curved">
+            	<tr>
+                	<th width="42"></th>
+                	<th width="40" class="drop_trigger"><a href="" data-toggle="popover" data-content="<ul><li><a href='#'>Hepsi</a></li><li><a href='#'>Hiçbiri</a></li><li><a href='#'>Seçilmeyenler</a></li></ul>">&nbsp;</a></th>
+                	<th class="text-left">Kullanıcı İsmi</th>
+                	<th width="80">E-İmza’lı</th>
+                	<th width="80">Yetkiler</th>
+                	<th width="160">TCKN</th>
+                	<th width="160">Sözleşme No</th>
+                	<th width="80">Miktar</th>
+                </tr>
+                <tr>
+                	<td class="row_select" colspan="2"><a href="">&nbsp;</a></td>
+                	<td class="text-left">Ahmet Aydın</td>
+                	<td class="bullet">&#8226;</td>
+                	<td><a href="">YÖNET</a></td>
+                	<td>49520406889</td>
+                	<td>234568289333</td>
+                	<td>2</td>
+                </tr>
+                <tr class="selected">
+                	<td class="row_select" colspan="2"><a href="">&nbsp;</a></td>
+                	<td class="text-left">Ahmet Aydın</td>
+                	<td class="bullet"></td>
+                	<td><a href="">YÖNET</a></td>
+                	<td>49520406889</td>
+                	<td>234568289333</td>
+                	<td>2</td>
+                </tr>
+                <tr>
+                	<td class="row_select" colspan="2"><a href="">&nbsp;</a></td>
+                	<td class="text-left">Ahmet Aydın</td>
+                	<td class="bullet">&#8226;</td>
+                	<td><a href="">YÖNET</a></td>
+                	<td>49520406889</td>
+                	<td>234568289333</td>
+                	<td>2</td>
+                </tr>
+                <tr>
+                	<td class="row_select" colspan="2"><a href="">&nbsp;</a></td>
+                	<td class="text-left">Ahmet Aydın</td>
+                	<td class="bullet">&#8226;</td>
+                	<td><a href="">YÖNET</a></td>
+                	<td>49520406889</td>
+                	<td>234568289333</td>
+                	<td>2</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="row search_bottom">
+        	<div class="col-md-3">
+            	<a href="" class="btn btn-default">Onay</a> <a href="" class="btn btn-danger">Reddet</a> 
+            </div>
+            <div class="col-md-6 paging">
+            	<a href="" class="back">Geri</a>
+                <span>
+                    <a href="">1</a><a href="">...</a>
+                </span>
+                <a href="" class="forward">İleri</a>
+            </div>
+        </div>
+    </div>
+
+	<div class="dashboard-footer">	  	
+		<div class="container">
+		  	Copyright © 2013, Kamu Sertifikasyon Merkezi
+		    <ul class="nav navbar-nav pull-right">
+                <li><a href="">Site Haritası</a></li>
+                <li><a href="">Bize Ulaşın</a></li>
+                <li><a href="">Güvenlik Bilgileri</a></li>
+			</ul>
+		</div>
+	</div>
+    
+</body>
+</html>

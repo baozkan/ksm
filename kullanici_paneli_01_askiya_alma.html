@@ -12,7 +12,7 @@
     	<!-- Custom CSS -->
     	<link href="css/styles.css" rel="stylesheet">
     	<link href="css/account.css" rel="stylesheet">
-    	<link href="css/sepet.css" rel="stylesheet">
+    	<link href="css/user_panel.css" rel="stylesheet">
 
     	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,19 +30,25 @@
     	<script type="text/javascript">
 			$(document).ready(function(){
 
+    			$('[data-toggle="popover"]').popover({
+					trigger: 'hover',
+					'placement': 'bottom',
+					'html': 'true'
+				});
+				
 			});
-    		</script>
+    	</script>
 	</head>
 <body>
     
 	<!-- HEADER -->
 	<nav class="navbar navbar-brand navbar-fixed-top" role="navigation">
 		<div class="container">
-		  <div class="row account_header">
+		  <div class="row account_header" id="navbar-wrapper">
 			  <ul class="nav navbar-nav">
-				  <li><a href="" class="notification"><span>1</span></a></li>
+				  <li><a href="" class="notification" id="sidemenu-toggle"><span>1</span></a></li>
 				  <li><a href="">Hesabım</a></li>
-				  <li><a href="" class="active">Ürünler ve Hizmetler</a></li>
+				  <li><a href="">Ürünler ve Hizmetler</a></li>
 				  <li><a href="">Destek / Yardım</a></li>
 			  </ul>
 			  <ul class="nav navbar-nav pull-right dashboard_account">
@@ -56,71 +62,36 @@
 	</nav>
 	<!-- ./HEADER -->
 		
-	<div class="container sepet">
-          
-		<!-- ODEME STEPS -->
-		<div class="container checkout_steps">
-			<ul class="nav nav-tabs" id="steps_list">
-				<li class="past">
-					<span>1</span>
-					E-İMZA
-				</li>
-				<li class="past">
-					<span>2</span>
-					ADRES
-				</li>
-				<li class="current">
-					<span>3</span>
-					ÖDEME
-				</li>
-				<li>
-					<span>4</span>
-					ONAY
-				</li>
-				<li>
-					<span>5</span>
-					TEŞEKKÜRLER
-				</li>
+	<div class="container user_panel">
+    	<div class="heading">
+        	<h1>Personel İşlemleri</h1>
+            <ul class="nav navbar-nav pull-right">
+				<li><a href="" class="btn btn-default">Onay İşlemleri</a></li>
+				<li class="active"><a href="" class="btn btn-default">Askıya Alma</a></li>
+				<li><a href="" class="btn btn-default">İptal</a></li>
+				<li><a href="" class="btn btn-default">Kart Talebi</a></li>
 			</ul>
-		</div>
-		<!-- ODEME STEPS -->
-		
-		<div class="checkout_container">
-			
-			<div class="col-md-12 checkout_space">
-				Lütfen aşağıdaki ödeme seçeneklerinden birini seçiniz.
-			</div>
-            
-            <div class="col-md-12 landing_tabs">
-                <ul class="nav nav-tabs" id="tab_list">
-                    <li><a href="">AÇIK HESAPTAN</a></li>
-                    <li><a href="">KREDİ KARTI</a></li>
-                    <li class="active"><a href="">EFT</a></li>
-                </ul>
+        </div>
+        
+        <div class="row search_top">
+        	<div class="col-md-3 users_selected">
+            	
             </div>
             
-            <div class="col-md-12 text-center tutar_bilgi underlined_column">
-				Ödenecek tutar: 10.000 TL
-			</div>
-			
-			<div class="col-md-12 underlined_column select_option">
-				<a href="" class="active">Ziraat Bankası Keçiören Şb. <span class="pull-right">IBAN: AD12 00012030200359100100</span></a>
-			</div>
-			
-			<div class="col-md-12 underlined_column select_option">
-				<a href="">Vakıf Bank Etimesgut Şb. <span class="pull-right">IBAN: AD12 00012030200359100100</span></a>
-			</div>
-			
-			<div class="col-md-12 underlined_column select_option last">
-				<a href="">Akbank Gebze Şb. <span class="pull-right">IBAN: AD12 00012030200359100100</span></a>
-			</div>
-            
-            <div class="col-md-6"><a href="submit" class="btn btn-default pull-right">GERİ</a></div>
-            <div class="col-md-6"><a href="submit" class="btn btn-success">DEVAM</a></div>
-			
-		</div>
-          
-	</div>
+            <div class="col-md-9 search">
+            	<input type="text" placeholder="Kullanıcı İsmi, TCKN, Sözleşme No..." class="keyword"><input type="submit" value="ARA" class="submit"> <a href="">Detaylı Arama</a>
+            </div>
+        </div>
+        
+        <div class="row">
+        	<div class="col-md-8 col-md-offset-2 bilgi_paragraf">
+            	Yukarıdaki arama aracı ile istediğiniz kullanıcıya ulaşarak,
+                <br><strong>askıya alma ve askıdan çıkarmak</strong> işlemlerini gerçekleştirebilirsiniz.
+                <br>Dilerseniz, detaylı arama linkini kullanarak
+                <br>aradığınız kullanıcı veya hesaplara daha hızlı ulaşabilirsiniz.
+            </div>
+        </div>
+    </div>
 
 	<div class="dashboard-footer">	  	
 		<div class="container">

@@ -7,7 +7,15 @@
 	border-right: 1px solid #14141a;
 	float: left;
     height: 100%;
+	left: -100%;
+	min-width: 0;
+	position: absolute;
 	width: 250px;
+	z-index: 2;
+}
+
+.slide-active {
+	left: 0;
 }
 
 .side-menu .menu-shadow {

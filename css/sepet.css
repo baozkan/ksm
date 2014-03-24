@@ -301,14 +301,15 @@
 	padding: 10px;
 }
 
-.checkout_container .underlined_column {
+.sepet .underlined_column {
 	border-bottom: 1px solid #e3e4e6;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	padding-top: 0;
 }
 
-.checkout_container a.btn {
+.checkout_container a.btn,
+.sepet_ozeti a.btn {
 	border: none;
 	height: 41px;
 	line-height: 41px;
@@ -316,12 +317,18 @@
 	width: 128px;
 }
 
-.checkout_container a.btn-default {
+.sepet_ozeti a.btn {
+	margin-bottom: 20px;
+}
+
+.checkout_container a.btn-default,
+.sepet_ozeti a.btn-default {
 	background-color: #b6babd;
 	color: #fff;
 }
 
-.checkout_container a.btn-success {
+.checkout_container a.btn-success,
+.sepet_ozeti a.btn-success {
 	background-color: #26cda0;
 	color: #282d25;
 }
@@ -483,4 +490,106 @@
 .checkout_container .kk_bilgi input.cvc {
 	padding: 0;
 	text-align: center;
+}
+
+.sepet_ozeti {
+	color: #5b6369;
+}
+
+.sepet_ozeti h2,
+.sepet_ozeti h3 {
+	border-bottom: 1px solid #dee0e2;
+	color: #2a3740;
+	font-size: 18px;
+	margin: 0;
+	padding: 0 0 16px 0;
+}
+
+.sepet_ozeti h3 {
+	padding-top: 10px;
+}
+
+.sepet_ozeti .col-md-12 {
+	border-bottom: 1px solid #dee0e2;
+	color: #5b6369;
+	line-height: 32px;
+	padding: 6px 0px;
+}
+
+.sepet_ozeti .sepet_listesi {
+	border: 0;
+}
+
+.sepet_ozeti .ozet_bilgi {
+	float: left;
+	width: 240px;
+}
+
+.sepet_ozeti .ozet_bilgi img {
+	float: left;
+	margin-right: 14px;
+}
+
+.sepet_ozeti .ozet_birim {
+	float: left;
+	width: 65px;
+}
+
+.sepet_ozeti .ozet_adet {
+	float: left;
+	text-align: center;
+	width: 80px;
+}
+
+.sepet_ozeti .ozet_toplam {
+	float: left;
+	text-align: right;
+	width: 100px;
+}
+
+.sepet_ozeti p {
+	font-size: 13px;
+	margin: 0;
+	padding: 12px 0 10px 0;
+}
+
+.sepet_ozeti p.adres {
+	height: 145px;
+}
+
+.sepet_ozeti .toplamlar {
+	padding-bottom: 10px;
+}
+
+.sepet_ozeti .toplamlar p {
+	margin: 0;
+	padding: 0;
+}
+
+.sepet_ozeti .toplamlar p:last-child {
+	border-top: 1px solid #dee0e2;
+	font-size: 16px;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.sepet_ozeti .toplamlar p:last-child span {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.sepet h2.tesekkur {
+	font-size: 24px;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.sepet .tesekkur_button a.btn {
+	margin: 30px 10px;
+}
+
+.sepet .tab-content {
+	padding-top: 0;
 }
